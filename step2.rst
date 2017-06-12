@@ -7,13 +7,10 @@
 Section Title
 -------------
 
-**Description:**
-
 .. #### Comment: short description
 
 **Some things to remember about the platoform**
 
-.. #### Comment: Optional - Insert platform logo
 
 - reminder one
 - reminder two
@@ -21,8 +18,8 @@ Section Title
 
 ----
 
-**Step Title:**
-~~~~~~~~~~~~~~~
+*Descriptive title - refrence platform/tool name for searchability*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1.
 
@@ -40,8 +37,8 @@ Section Title
 
 ----
 
-Summary
-~~~~~~~
+*Summary*
+~~~~~~~~~
 
 ..
     Summary
@@ -68,7 +65,7 @@ Post your question to the user forum:
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/discovery_environment_guide>`_
+- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----

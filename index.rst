@@ -9,6 +9,7 @@ GUIDE NAME
 Goal
 ----
 
+.. #### Comment: If the platform has an ICON place it here
 .. #### Comment: Sort description of goal
 
 ----
@@ -16,14 +17,14 @@ Goal
 .. toctree::
 	:maxdepth: 2
 
-	Tutorial home <index.rst>
+	Tutorial home <self>
 	First Step <step1.rst>
 	Last Step <step2.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'First Step' with content located in 'step1.rst'.
-	Copy step1.rst. step2.rst has sligtly different formatting to end the document.
+	Copy step1.rst. step2.rst has slightly different formatting to end the document.
 	Edit these titles and filenames as needed ####
 
 
