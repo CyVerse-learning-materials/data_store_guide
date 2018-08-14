@@ -23,7 +23,7 @@ page.
   of data. You can use your own metadata schema, or apply one of our `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-AttachTemplate>`_
 - The Discovery Environment supports several metadata templates that can be used
   for submission of metadata. Additional templates you may wish to use can be
-  found at resources like `Biosharing.org <https://biosharing.org/>`_
+  found at resources like `FairSharing.org <https://fairsharing.org/>`_
   - Metadata can be managed through a graphical interface in the Discovery Environment
     or using iCommands at the command line. We will only cover the Discovery Environment
     in this guide. See instructions for `iCommands metadata <https://wiki.cyverse.org/wiki/display/DS/Adding+Metadata+to+a+File+Using+iRODS+imeta+%28Metadata%29+Commands>`_
@@ -37,7 +37,7 @@ page.
 .. note::
    You must have `write` or `own` permission to edit an object's metadata.
 
-1. Log into the `Discovery Environment`_.
+1. Log into the |discovery_enviornment|.
 
 2. Click on the **`Data`** icon to open a Data window. Select (checkbox) a
    single file/folder to add metadata to.
@@ -62,7 +62,7 @@ page.
 
 **Adding Metadata using a CyVerse Template**
 
-1. Log into the `Discovery Environment <https://de.cyverse.org/de/>`_.
+1. Log into the |discovery_enviornment|.
 
 2. Click on the **`Data`** icon to open a Data window. Click on the **`Metadata`**
    menu and select `Download template`. Select a template and click `OK` to
@@ -189,3 +189,6 @@ Data window.
 .. |edit_view_metadata| image:: ./img/data_store/edit_view_metadata.png
     :width: 400
     :height: 150
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
