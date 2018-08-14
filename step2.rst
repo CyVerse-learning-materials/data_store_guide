@@ -25,7 +25,7 @@ iCommands is the most flexible way to interact with the Data Store.
 ----
 
 *iCommands Installation Using Mac OSX*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
     iCommands is updated frequently. This tutorial assumes you have followed the

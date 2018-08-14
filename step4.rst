@@ -30,7 +30,7 @@ Public Link.
   , but less secure method for file transfer. Do not share sensitive/private
   data using these links.
 
-1. If necessary, login to the `Discovery Environment <https://de.cyverse.org/de/>`_
+1. If necessary, login to the |discovery_enviornment|.
 
 2. In the Data window, select (checkbox) an individual file you wish to share.
 
@@ -63,7 +63,7 @@ Public Link.
 Share data with another CyVerse user by granting permission to read, write, or
 own files/folders
 
-1. If necessary, login to the `Discovery Environment <https://de.cyverse.org/de/>`_
+1. If necessary, login to the |discovery_enviornment|.
 
 2. In the Data window, select (checkbox) file(s), folder(s) you wish to share
    with another user;
@@ -192,3 +192,6 @@ Post your question to the user forum:
 .. |manage_sharing| image:: ./img/de/manage_sharing_menu.png
     :width: 400
     :height: 300
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
