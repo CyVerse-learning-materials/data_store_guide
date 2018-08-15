@@ -24,10 +24,10 @@ page.
 - The Discovery Environment supports several metadata templates that can be used
   for submission of metadata. Additional templates you may wish to use can be
   found at resources like `FairSharing.org <https://fairsharing.org/>`_
-  - Metadata can be managed through a graphical interface in the Discovery Environment
-    or using iCommands at the command line. We will only cover the Discovery Environment
-    in this guide. See instructions for `iCommands metadata <https://wiki.cyverse.org/wiki/display/DS/Adding+Metadata+to+a+File+Using+iRODS+imeta+%28Metadata%29+Commands>`_
-    on the CyVerse wiki.
+- Metadata can be managed through a graphical interface in the Discovery Environment
+  or using iCommands at the command line. We will only cover the Discovery Environment
+  in this guide. See instructions for `iCommands metadata <https://wiki.cyverse.org/wiki/display/DS/Adding+Metadata+to+a+File+Using+iRODS+imeta+%28Metadata%29+Commands>`_
+  on the CyVerse wiki.
 
 ----
 
@@ -69,7 +69,7 @@ page.
    download. (In this example, we will use the `DOI Request - DataCite Metadata`)
    template.
 
-3. Unzip the downloaded template; it will contain `blank.csv <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/data_store/doi_metadata_template/blank.csv>`_ and `guide.csv <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/data_store/doi_metadata_template/guide.csv>`_.
+3. Unzip the downloaded template; it will contain |blank| and |guide|.
    Open these files using the spreadsheet editor of your choice.
 
    .. tip::
@@ -192,3 +192,9 @@ Data window.
 .. |discovery_enviornment| raw:: html
 
     <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+.. |blank| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/data_store/doi_metadata_template/guide.csv" target="_blank">blank.csv</a>
+.. |guide| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/data_store/doi_metadata_template/blank.csv" target="_blank">guide.csv</a>
