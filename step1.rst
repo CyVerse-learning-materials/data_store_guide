@@ -19,7 +19,7 @@ public Data Store locations.
 *Download and first-time configuration of Cyberduck*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Download |cyberduck_link|for your operating system;
+  1. Download |cyberduck_link| for your operating system;
      follow the installation instructions.
 
   2. Download the CyVerse `configuration profile <https://wiki.cyverse.org/wiki/download/attachments/18188197/iPlant%20Data%20Store.cyberduckprofile?version=1&modificationDate=1436557522000&api=v2>`_ .
@@ -137,6 +137,7 @@ of your home directory.
 .. |cyberduck_transfers2| image:: ./img/data_store/cyberduck_transfers2.png
     :width: 300
     :height: 250
+
 .. |cyberduck_link| raw:: html
 
     <a href="https://cyberduck.io/" target="_blank">Cyberduck</a>
