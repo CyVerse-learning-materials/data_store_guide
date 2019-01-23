@@ -68,10 +68,10 @@ you should be ready to run iCommands immediately at the terminal.
      $ iinit
      One or more fields in your iRODS environment file (.irodsEnv) are
      missing; please enter them.
-     Enter the host name (DNS) of the server to connect to: #data.cyverse.org
-     Enter the port number: #1247
+     Enter the host name (DNS) of the server to connect to: data.cyverse.org
+     Enter the port number: 1247
      Enter your irods user name: #your_cyverse_username
-     Enter your irods zone: #iplant
+     Enter your irods zone: iplant
      Those values will be added to your environment file (for use by
      other i-commands) if the login succeeds.
 
@@ -111,20 +111,20 @@ you should be ready to run iCommands immediately at the terminal.
 
       .. code:: bash
 
-        $ iget -r # For recursive transfer of directories and their contents
+        $ iput -r # For recursive transfer of directories and their contents
 
-        $ iget -P # display the progress of the upload
+        $ iput -P # display the progress of the upload
 
-        $ iget -f # force the upload and overwrite
+        $ iput -f # force the upload and overwrite
 
-        $ iget -T # Renew socket connection after 10 min (May help connections
+        $ iput -T # Renew socket connection after 10 min (May help connections
                   # that are failing due to some connection/firewall settings)
 
 
     See the `full iCommands documentation <https://docs.irods.org/master/icommands/user/#iput>`__
     for more information.
 
-1. Upload a directory using the `iput` command
+1. Upload a directory using the `iput` command. Remember, the -r flag is to recursively upload a directory, so if you are uploading a single file, omit the -r flag.
 
    .. code:: bash
 
@@ -156,7 +156,7 @@ you should be ready to run iCommands immediately at the terminal.
     See the `full iCommands documentation <https://docs.irods.org/master/icommands/user/#iget>`_
     for more information.
 
-1. Download a file using the `iget` command
+1. Download a file using the `iget` command. Remember, the -r flag is to recursively upload a directory, so if you are uploading a single file, omit the -r flag.
 
    .. code:: bash
 
