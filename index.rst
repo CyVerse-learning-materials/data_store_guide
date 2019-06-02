@@ -34,6 +34,7 @@ for a more comprehensive look at Data Store capabilities.
 	Command Line Transfer with iCommands <step2.rst>
 	Associate Data with Metadata <step3.rst>
 	Data Sharing and Other Features <step4.rst>
+	Desktop Access with WebDav <step5.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
