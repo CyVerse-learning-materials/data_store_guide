@@ -22,21 +22,21 @@ WebDAV works best for small files or small collections of files. There is no har
 
 There are two access points to CyVerse WebDAV services: one for anonymous read-only access and one for authenticated access. 
 
-WebDAV provides anonymous read-only access through URLs rooted at https://data.cyverse.org/dav-anon/. All data that can be seen by the anonymous user can be accessed anonymously through this service, excluding the immediate contents of /iplant/home and the immediate contents of /iplant/home/<username>, where <username> is any CyVerse login. 
+WebDAV provides anonymous read-only access through URLs rooted at ``https://data.cyverse.org/dav-anon/``. All data that can be seen by the anonymous user can be accessed anonymously through this service, excluding the immediate contents of ``/iplant/home`` and the immediate contents of ``/iplant/home/<username>``, where <username> is any CyVerse login name. 
 
-The service also provided authenticated access through URLs rooted at https://data.cyverse.org/dav/. Once a user has authenticated with his CyVerse credentials, they can access any file or folder with the permission level they have on the file or folder.
+The service also provided authenticated access through URLs rooted at ``https://data.cyverse.org/dav/``. Once a user has authenticated with his CyVerse credentials, they can access any file or folder with the permission level they have on the file or folder.
 
 User Data
 =========
-A user with a CyVerse login of <username> would use the WebDAV link https://data.cyverse.org/dav/iplant/home/<username>/ to access their data. 
+A user with a CyVerse login of <username> would use the WebDAV link ``https://data.cyverse.org/dav/iplant/home/<username>/`` to access their data. 
 
 Community Released Data/Project Data
 =============
-To access Community Release data (data from specific projects) stored in iRODS at /iplant/home/shared/<project>/, use the link https://data.cyverse.org/dav/iplant/projects/<project>/.
+To access data from specific projects stored in iRODS at ``/iplant/home/shared/<project>/``, use the link ``https://data.cyverse.org/dav/iplant/projects/<project>/``.
 
 CyVerse Curated Data (Data with a DOI)
 =====================
-To access the data curated by CyVerse in the Data Commons (that is, datasets with DOIs), use the following link: https://data.cyverse.org/dav-anon/iplant/commons/cyverse_curated/.
+To access the data curated by CyVerse in the Data Commons (that is, datasets with DOIs), use the following link: https://data.cyverse.org/dav-anon/iplant/commons/cyverse_curated/ .
 
 
 **Common Ways to Access the WebDAV Service**
@@ -77,7 +77,7 @@ Use these instruction to open the WebDAV service from the Gnome desktop using Fi
 
  1. Open Files.
  2. Select Other Locations in the Places sidebar.
- 3. In the Connect to Server footer, enter the URL for the desired folder to access. Note: Files identifies TLS encrypted WebDAV URLs with the scheme davs. This means the base for the CyVerse URLs is davs://data.cyverse.org/ instead of https://data.cyverse.org/.
+ 3. In the Connect to Server footer, enter the URL for the desired folder to access. Note: Files identifies TLS encrypted WebDAV URLs with the scheme davs. This means the base for the CyVerse URLs is ``davs://data.cyverse.org/`` instead of ``https://data.cyverse.org/``.
  4. Click the neighboring Connect button.
  5. Provide your CyVerse username and password if prompted. 
 
@@ -106,9 +106,6 @@ Search for an answer:
     `CyVerse Learning Center <http://learning.cyverse.org>`_ or
     `CyVerse Wiki <https://wiki.cyverse.org>`_
 
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
-
 ----
 
 **Fix or improve this documentation:**
@@ -130,24 +127,4 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |data_window| image:: ./img/de/data_window.png
-    :width: 550
-    :height: 300
-.. |viewing_window| image:: ./img/de/viewing_window.png
-    :width: 400
-    :height: 200
-.. |data_links_window| image:: ./img/de/manage_data_links.png
-    :width: 450
-    :height: 250
-.. |delete_icon| image:: ./img/de/delete_icon.png
-    :width: 15
-    :height: 15
-.. |link_icon| image:: ./img/de/link_icon.png
-    :width: 15
-    :height: 15
-.. |manage_sharing| image:: ./img/de/manage_sharing_menu.png
-    :width: 400
-    :height: 300
-.. |discovery_enviornment| raw:: html
 
-    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
