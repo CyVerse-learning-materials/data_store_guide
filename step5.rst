@@ -18,7 +18,7 @@ WebDAV works best for small files or small collections of files. There is no har
 ----
 
 *Accessing CyVerse data via WebDAV Services*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are two access points to CyVerse WebDAV services: one for anonymous read-only access and one for authenticated access. 
 
@@ -39,7 +39,7 @@ CyVerse Curated Data (Data with a DOI)
 To access the data curated by CyVerse in the Data Commons (that is, datasets with DOIs), use the following link: https://data.cyverse.org/dav-anon/iplant/commons/cyverse_curated/ .
 
 
-**Common Ways to Access the WebDAV Service**
+*Common Ways to Access the WebDAV Service*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Web Browser
 =====================
@@ -94,7 +94,7 @@ This requires root or at least sudo access. Use these instruction to mount a Web
 ----
 
 
-More help and additional information
+*More help and additional information*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See the `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents>`_ for full details on how to access the Data Store.
