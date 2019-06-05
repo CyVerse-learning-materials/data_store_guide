@@ -20,7 +20,9 @@ WebDAV works best for small files or small collections of files. There is no har
 *Accessing CyVerse data via WebDAV Services*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two access points to CyVerse WebDAV services: one for anonymous read-only access and one for authenticated access. 
+There are two access points to CyVerse WebDAV services: one for anonymous read-only access and one for authenticated access. These services can be accessed directly in a web browser, or with command line tools.
+
+The simiplest way to access WebDAV in a browser is to go to https://data.cyverse.org/dav. This will bring up a menu for the options described below.
 
 WebDAV provides anonymous read-only access through URLs rooted at ``https://data.cyverse.org/dav-anon/``. All data that can be seen by the anonymous user can be accessed anonymously through this service, excluding the immediate contents of ``/iplant/home`` and the immediate contents of ``/iplant/home/<username>``, where <username> is any CyVerse login name. 
 
