@@ -48,7 +48,7 @@ iCommands is the most flexible way to interact with the Data Store.
       allow you to proceede. Follow the prompts to begin the installation.
 
 By default, this installation will place iCommands in your system `PATH` so
-you should be ready to run iCommands immediately at the terminal.
+you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run `iinit`), typing `export PATH="/Applications/icommands/:$PATH"` in the terminal should fix the problem.
 
 ----
 
