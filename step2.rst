@@ -96,9 +96,9 @@ you should be ready to run iCommands immediately at the terminal. If this does n
 *Anonymous access to the CyVerse Datastore*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can access public data in the CyVerse Datastore using:
+You can access public data in the CyVerse Datastore with icommands using:
 
-- Username: Anonymous
+- Username: anonymous
 
 - Password: <leave blank>
 
