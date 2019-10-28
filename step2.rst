@@ -24,7 +24,7 @@ iCommands is the most flexible way to interact with the Data Store.
 
 ----
 
-*iCommands Installation Using Mac OSX*
+*iCommands Installation Using Mac OSX/Linux*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
@@ -92,6 +92,14 @@ you should be ready to run iCommands immediately at the terminal. If this does n
     C- /iplant/home/your_home_directory/another_folder
 
 ----
+
+*Anonymous access to the CyVerse Datastore*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can access public data in the CyVerse Datastore using:
+- Username: Anonymous
+- Password: <leave blank>
+
 
 *Upload Files/folders from local Computer to Data Store*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
