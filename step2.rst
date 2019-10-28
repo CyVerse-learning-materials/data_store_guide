@@ -97,9 +97,10 @@ you should be ready to run iCommands immediately at the terminal. If this does n
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can access public data in the CyVerse Datastore using:
-- Username: Anonymous
-- Password: <leave blank>
 
+- Username: Anonymous
+
+- Password: <leave blank>
 
 *Upload Files/folders from local Computer to Data Store*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
