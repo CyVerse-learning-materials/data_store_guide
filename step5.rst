@@ -7,7 +7,7 @@
 **WebDAV**
 -----------------------------------
 
-WebDAV is an extension to the HTTP protocol that allows users to remotely edit and manage files. CyVerse has added support for WebDAV to the Data Store. This means users can access their home and public folders in the CyVerse Data Store from their local computers using web browsers and other WebDAV enabled applications such as common operating system file managers. With WebDAV, a user can copy files between her local computer and the Data Store as easily as if she were copying them between two folders on her local computer.
+WebDAV is an extension to the HTTP protocol that allows users to remotely edit and manage files. CyVerse has added support for WebDAV to the Data Store. This means users can access their home and public folders in the CyVerse Data Store from their local computers using web browsers and other WebDAV enabled applications such as common operating system file managers. With WebDAV, users can copy files between local computer and the Data Store as easily as if they were copying them between two folders on their computer.
 
 ----
 
