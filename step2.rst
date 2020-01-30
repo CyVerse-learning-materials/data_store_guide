@@ -15,55 +15,75 @@ iCommands is the most flexible way to interact with the Data Store.
 
 **Some things to remember about iCommands**
 
-- This is a *command line* tool: While many biologists don't have much command
-  line experience, we hope you will try to follow along anyway. There are lots
-  of free available training including `Software Carpentry <https://software-carpentry.org/>`_ and
-  Data Carpentry `<http://www.datacarpentry.org/>`_
-- Poor support for *Windows*: Currently, we have not tested a Windows version
-  of iCommands and
+- This is a *command line* tool, operated in a terminal.
+- Poor support for *Windows OS*: Currently, we have not tested a Windows-only shell version
+  of iCommands.
 
 ----
 
 *iCommands Installation Using Mac OSX/Linux*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
-    iCommands is updated frequently. This tutorial assumes you have followed the
-    directions to download and install iCommands following the instructions for
-    `Linux <https://wiki.cyverse.org/wiki/display/DS/Setting+Up+iCommands#SettingUpiCommands-linux>`_
-    or `Mac <https://wiki.cyverse.org/wiki/display/DS/Setting+Up+iCommands#SettingUpiCommands-mac>`_
-    following our current best recommendation on the wiki. **We will detail the
-    install instructions in this guide using the Mac installer.**
+1. On a linux OS you can use the package managers from iRODS to install in the termainal:
 
-1. Assuming you are installing from Mac OSX, download the CyVerse-specific
-   `iCommands Installer 4.1.9 <https://wiki.cyverse.org/wiki/download/attachments/28117338/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472845229000&api=v2>`_.
-   Follow the installation instructions.
+**Debian/Ubuntu:**
 
-   .. tip::
+.. code:: bash
 
-      When opening the package, you may get a security warning noting the file
-      is from "an unidentified developer." To open anyway, go to the OSX
-      'System Preferences' and select the 'Security & Privacy' menu. At the
-      bottom of the menu,  there should be and 'Open Anyway' button that will
-      allow you to proceede. Follow the prompts to begin the installation.
+  https://files.renci.org/pub/irods/releases/4.1.12/ubuntu14/irods-icommands-4.1.12-ubuntu14-x86_64.deb
+  apt-get install ./irods-icommands-4.1.10-ubuntu14-x86_64.deb
 
-By default, this installation will place iCommands in your system `PATH` so
-you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), typing ``export PATH="/Applications/icommands/:$PATH"`` in the terminal should fix the problem.
+
+**Centos:**
+
+.. code:: bash
+
+  yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
+  
+**Mac OS X** 
+
+1. Download the CyVerse-Specific
+   `iCommands Installer 4.1.9 <https://wiki.cyverse.org/wiki/download/attachments/28117338/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472845229000&api=v2>`_
+   
+2. Open the file by locating it in your Finder, right click on it and select 'Open'. When opening the package, you may get a security warning noting the file is from "an unidentified developer". Alternately, go to the OS 'System Preferences' and select the 'Security & Privacy' menu. At the bottom of the menu,  there should be and 'Open Anyway' button that will allow you to procede. 
+
+
+3. Follow the prompts to begin the installation. You will need to know your administrator password to install new software. 
+ 
+.. note:: 
+
+    Newer Mac OS X now ships with ``zsh`` as its default shell rather than ``bash``. The installer will attempt to write some environmental variables to the ``.bashrc`` file which for ``zsh`` is called the `.zshrc`.
+    
+    By default, this installation will place iCommands in your system ``PATH`` so you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), you can add the `icommands` path by editing your ``.zshrc`` file: 
+
+.. code:: bash
+  
+  # add iCommands Path
+  export PATH="/Applications/icommands/:$PATH"
+  export IRODS_PLUGINS_HOME=/Applications/icommands/plugins/
+  
+and then in terminal source the file ``source ~/.zshrc``. 
 
 ----
 
 *iCommands First-time Configuration*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
-    Once iCommands is installed and in the system `PATH` these instructions
-    apply at a terminal in Mac OSX and Linux systems.
+**HPC Center**
 
-1. Open a terminal and use the `iinit` command to start the configuration
+
+.. note::
+    If using iCommands in an HPC environment, which has many systems with iCommands installed, run the ``module load irods`` command to get access to iRODS iCommands.
+
+Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OSX and Linux systems.
+
+1. Open a terminal 
+
+2. Type the `iinit` command to start the configuration
    process. When prompted, enter the values shown below as comments in the
    example code block.
 
-   .. code:: bash
+.. code:: bash
 
      $ iinit
      One or more fields in your iRODS environment file (.irodsEnv) are
@@ -77,7 +97,25 @@ you should be ready to run iCommands immediately at the terminal. If this does n
 
      Enter your current iRODS password: #your_cyverse_password
 
-2. Verify that your iCommands installation works and is properly configured
+CyVerse Data Store configuration:
+
+.. list-table::
+    
+ * - host name
+   - port #
+   - username
+   - zone
+   - password
+ * - `data.cyverse.org`
+   -  `1247`
+   - CyVerse UserID
+   - `iplant`
+   - CyVerse Password
+
+.. note::
+    You can reconfigure iCommands for other iRODS data stores by changing your environment file
+    
+3. Verify that your iCommands installation works and is properly configured
    using the `ils` command to list the contents of your Data Store home
    directory.
 
@@ -106,6 +144,7 @@ You can access public data in the CyVerse Datastore with icommands using:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. warning::
+
    When uploading your data to the Data Store you should not upload files/folders
    with names containing spaces (e.g. experiment one.fastq) or name that contain
    special characters (e.g. ~ ` ! @ # $ % ^ & * ( ) + = { } [ ] | \ : ; " ' <
@@ -198,7 +237,7 @@ In addition to the commands above, there are several frequently used iCommands
   |Home_Icon|_
   `Learning Center Home <http://learning.cyverse.org/>`_
 
-.. |CyVerse logo| image:: ./img/cyverse_rgb.png
+.. |CyVerse logo| image:: ./img/cyverse_cmyk.png
     :width: 500
     :height: 100
 .. _CyVerse logo: http://learning.cyverse.org/
