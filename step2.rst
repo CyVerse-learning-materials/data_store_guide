@@ -17,12 +17,12 @@ iCommands is the most flexible way to interact with the Data Store.
 
 - This is a *command line* tool, operated in a terminal.
 - Poor support for *Windows OS*: Currently, we have not tested a Windows-only shell version
-  of iCommands.
+  of iCommands. We do suggest installing `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and following the Linux installation instructions 
 
 ----
 
-*iCommands Installation Using Mac OSX/Linux*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**iCommands Installation for Linux**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. On a linux OS you can use the package managers from iRODS to install in the termainal:
 
@@ -40,7 +40,8 @@ iCommands is the most flexible way to interact with the Data Store.
 
   yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
   
-**Mac OS X** 
+**iCommands Installation for MAC OS X**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Download the CyVerse-Specific
    `iCommands Installer 4.1.9 <https://wiki.cyverse.org/wiki/download/attachments/28117338/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472845229000&api=v2>`_
@@ -56,13 +57,13 @@ iCommands is the most flexible way to interact with the Data Store.
     
     By default, this installation will place iCommands in your system ``PATH`` so you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), you can add the `icommands` path by editing your ``.zshrc`` file: 
 
-.. code:: bash
-  
-  # add iCommands Path
-  export PATH="/Applications/icommands/:$PATH"
-  export IRODS_PLUGINS_HOME=/Applications/icommands/plugins/
-  
-and then in terminal source the file ``source ~/.zshrc``. 
+    .. code:: bash
+
+      # add iCommands Path
+      export PATH="/Applications/icommands/:$PATH"
+      export IRODS_PLUGINS_HOME=/Applications/icommands/plugins/
+
+    and then in terminal source the file ``source ~/.zshrc``. 
 
 ----
 
@@ -131,8 +132,8 @@ CyVerse Data Store configuration:
 
 ----
 
-*Anonymous access to the CyVerse Datastore*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Anonymous access to the CyVerse Datastore**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can access public data in the CyVerse Datastore with icommands using:
 
@@ -181,8 +182,8 @@ You can access public data in the CyVerse Datastore with icommands using:
 
 ----
 
-*Download Files/folders from Data Store to local Computer*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Download Files/folders from Data Store to local Computer**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. tip::
 
@@ -211,11 +212,38 @@ You can access public data in the CyVerse Datastore with icommands using:
       $ iget -PT /iplant/home/cyverse_username/target_file /local_destination
         # This command will output the progress as it downloads to your local machine
 
+----
+
+**NetCDF iCommands**
+~~~~~~~~~~~~~~~~~~~~
+
+For the Linux distributions there are three extra iCommands that support common NetCDF operations: 
+
+``inc`` performs data operations on a list of NetCDF files, 
+
+``incarch`` archives a open ended time series data, 
+
+``incattr`` performs operation on attributes of NetCDF files. 
+
+Each of these commands accepts the ``-h`` command line option. When a command is called with this option, it displays the command's help documentation.  Please see this help documentation for more information.
+
+**Installation**
+
+1. Install iRODS Runtime
+
+Before the NetCDF iCommands can be installed, the current version of the iRODS run-time library needs to be installed. Please install the appropriate version (e.g. ``irods-runtime-X-X-XX``). The distribution specific packages can be found on  `RENCI's website <https://files.renci.org/pub/irods/releases/>`_.
+
+2. Install NetCDF API
+
+Once the run-time library is installed, the iRODS NetCDF API library needs to be installed. Please use the appropriate link to the download the installation package and install it. The package installer will likely warn that irods user and/or group don't exist, and that it will be using root instead. These warnings are harmless, since the package contents should be installed with root ownership.
+
+* `CentOS7 <https://wiki.cyverse.org/wiki/download/attachments/28117338/irods-api-plugin-netcdf-1.0-centos7.rpm?version=1&modificationDate=1552065196000&api=v2>`_
+* Ubuntu 14+ <https://wiki.cyverse.org/wiki/download/attachments/28117338/irods-icommands-netcdf-1.0-ubuntu14.deb?version=1&modificationDate=1549392566000&api=v2>`_
 
 ----
 
-*Additional Frequently Used iCommands*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Additional Frequently Used iCommands**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In addition to the commands above, there are several frequently used iCommands
 - most of which you would expect following the Linux paradigm:
