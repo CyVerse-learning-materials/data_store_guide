@@ -31,7 +31,7 @@ iCommands is the most flexible way to interact with the Data Store.
 .. code:: bash
 
   https://files.renci.org/pub/irods/releases/4.1.12/ubuntu14/irods-icommands-4.1.12-ubuntu14-x86_64.deb
-  apt-get install ./irods-icommands-4.1.10-ubuntu14-x86_64.deb
+  apt-get install ./irods-icommands-4.1.12-ubuntu14-x86_64.deb
 
 
 **Centos:**
