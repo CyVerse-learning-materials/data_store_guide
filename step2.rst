@@ -67,20 +67,17 @@ iCommands is the most flexible way to interact with the Data Store.
 
 ----
 
-*iCommands First-time Configuration*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**HPC Center**
-
+**iCommands First-time Configuration**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
     If using iCommands in an HPC environment, which has many systems with iCommands installed, run the ``module load irods`` command to get access to iRODS iCommands.
 
 Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OSX and Linux systems.
 
-1. Open a terminal 
+1. Open terminal 
 
-2. Type the `iinit` command to start the configuration
+2. Type `iinit` command to start the configuration
    process. When prompted, enter the values shown below as comments in the
    example code block.
 
@@ -251,7 +248,9 @@ In addition to the commands above, there are several frequently used iCommands
 - **ipwd**: Print current directory
 - **imkdir**: Create a directory
 - **icd**: Change directory
+- **irsync**: Sync local directory with iRODS directory
 
+`iRODS iCommands Documentation <https://docs.irods.org/4.2.1/icommands/user/>`_
 
 ----
 
