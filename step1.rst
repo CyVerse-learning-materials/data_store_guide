@@ -22,7 +22,7 @@ public Data Store locations.
   1. Download |cyberduck_link| for your operating system;
      follow the installation instructions.
 
-  2. Download the CyVerse `configuration profile <https://wiki.cyverse.org/wiki/download/attachments/18188197/CyVerseDataStore.cyberduckprofile?version=1&modificationDate=1568665373988&api=v2>`_ .
+  2. Download the CyVerse `configuration profile <https://cyverse.atlassian.net/wiki/download/attachments/241869843/CyVerseDataStore.cyberduckprofile?version=1&modificationDate=1568640173000&cacheVersion=1&api=v2>`_ .
      Double-click on the downloaded file - this should open the installed
      Cyberduck software.
 
