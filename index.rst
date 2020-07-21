@@ -72,7 +72,7 @@ Downloads, access, and services
         that allows you to easily upload and download data. (available for Mac
         /PC). You will also need to download our connection profile (bookmark).
       - - `Cyberduck <https://cyberduck.io/>`_ (Cyberduck website)
-        - `Cyberduck connection profile <https://wiki.cyverse.org/wiki/download/attachments/18188197/iPlant%20Data%20Store.cyberduckprofile?version=1&modificationDate=1436557522000&api=v2>`_
+        - `Cyberduck connection profile <https://cyverse.atlassian.net/wiki/download/attachments/241869843/CyVerseDataStore.cyberduckprofile?version=1&modificationDate=1568640173000&cacheVersion=1&api=v2>`_
     * - iCommands (optional)
       - iCommands are a set of command line binaries that can be used to
         interact with the Data Store. Download iCommands (available for Mac/
