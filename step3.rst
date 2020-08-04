@@ -20,7 +20,7 @@ page.
 **Some things to remember about the platform**
 
 - You can add metadata to a single file/folder, or in bulk to large collections
-  of data. You can use your own metadata schema, or apply one of our `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-AttachTemplate>`_
+  of data. You can use your own metadata schema, or apply one of our `metadata templates <https://cyverse.atlassian.net/wiki/spaces/DEmanual/pages/242027072/Using+Metadata+in+the+DE>`_
 - The Discovery Environment supports several metadata templates that can be used
   for submission of metadata. Additional templates you may wish to use can be
   found at resources like `FairSharing.org <https://fairsharing.org/>`_
