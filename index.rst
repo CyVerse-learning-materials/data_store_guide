@@ -1,4 +1,6 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -23,6 +25,22 @@ for a more comprehensive look at Data Store capabilities.
 
 .. #### Comment: If the platform has an ICON place it here
 .. #### Comment: Sort description of goal
+
+Manual Maintainer(s)
+------------------------
+
+Who to contact if this manual needs fixing. You can also email
+`Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+.. list-table::
+    :header-rows: 1
+
+    * - Maintainer
+      - Institution
+      - Contact
+   * - Your Name
+      - CyVerse / UA
+      - Yourname@email.com
 
 ----
 
@@ -96,8 +114,14 @@ Downloads, access, and services
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/data_store_guide>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
 
 ----
 
