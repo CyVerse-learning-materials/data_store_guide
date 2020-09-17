@@ -1,3 +1,4 @@
+.. include:: cyverse_rst_defined_substitutions.txt
 |CyVerse_logo|_
 
 |Home_Icon|_
@@ -117,6 +118,7 @@ See the `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Data+Store+
 - Report an issue or submit a change:
   |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
 
 
 ----

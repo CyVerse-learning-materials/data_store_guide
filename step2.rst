@@ -1,3 +1,4 @@
+.. include:: cyverse_rst_defined_substitutions.txt
 |CyVerse_logo|_
 
 |Home_Icon|_
@@ -263,6 +264,7 @@ In addition to the commands above, there are several frequently used iCommands
 - Report an issue or submit a change:
   |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
 
 
 ----
