@@ -26,11 +26,7 @@ for a more comprehensive look at Data Store capabilities.
 .. #### Comment: If the platform has an ICON place it here
 .. #### Comment: Sort description of goal
 
-Manual Maintainer(s)
-------------------------
 
-Who to contact if this manual needs fixing. You can also email
-`Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 .. list-table::
     :header-rows: 1
