@@ -26,20 +26,37 @@ iCommands is the most flexible way to interact with the Data Store.
 
 1. On a linux OS you can use the package managers from iRODS to install in the termainal:
 
-**Debian/Ubuntu:**
+**CentOS:**
 
 .. code:: bash
 
-  wget https://files.renci.org/pub/irods/releases/4.1.12/ubuntu14/irods-icommands-4.1.12-ubuntu14-x86_64.deb
-  apt-get install ./irods-icommands-4.1.12-ubuntu14-x86_64.deb
+  yum install https://files.renci.org/pub/irods/releases/4.1.10/centos7/irods-icommands-4.1.10-centos7-x86_64.rpm
 
-
-**Centos:**
+**Debian/Ubuntu 18.04 or older:**
 
 .. code:: bash
 
-  yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
-  
+  wget https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
+  apt-get install ./irods-icommands-4.1.10-ubuntu14-x86_64.deb
+
+**Ubuntu 20.04**
+
+In Ubuntu 20.04, the iRODS iCommands package depends on the ``multiarch-support_2.27`` and
+``libssl1.0.0`` packages that are no longer available in the base repositories. These need to be
+downloaded and installed manually as in the following example.
+
+.. code:: bash
+
+  wget \
+    http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+    http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+    https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
+
+  dpkg --install \
+    multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+    libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+    irods-icommands-4.1.10-ubuntu14-x86_64.deb
+ 
 **iCommands Installation for MAC OS X**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
