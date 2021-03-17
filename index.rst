@@ -77,7 +77,7 @@ Downloads, access, and services
       - iCommands are a set of command line binaries that can be used to
         interact with the Data Store. Download iCommands (available for Mac/
         Linux) if you want to use these functionalities.
-      - - iCommands (`Mac <https://wiki.cyverse.org/wiki/download/attachments/28117338/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472845229000&api=v2>`_)
+      - - iCommands (`Mac <https://cyverse.atlassian.net/wiki/download/attachments/241869823/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472820029000&cacheVersion=1&api=v2>`_)
         - iCommands (`Linux <https://irods.org/download/>`_ - **scroll down to iCommands CLI**)
     * - Spreadsheet editor (optional)
       - To edit a metadata template in .csv format, we recommend using a spreadsheet
