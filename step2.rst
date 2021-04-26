@@ -17,7 +17,7 @@ iCommands is the most flexible way to interact with the Data Store.
 
 - This is a *command line* tool, operated in a terminal.
 - Poor support for *Windows OS*: Currently, we have not tested a Windows-only shell version
-  of iCommands. We do suggest installing `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and following the Linux installation instructions 
+  of iCommands. We do suggest installing `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and following the Linux installation instructions
 
 ----
 
@@ -41,9 +41,9 @@ iCommands is the most flexible way to interact with the Data Store.
 
 **Ubuntu 20.04**
 
-In Ubuntu 20.04, the iRODS iCommands package depends on the ``multiarch-support_2.27`` and
-``libssl1.0.0`` packages that are no longer available in the base repositories. These need to be
-downloaded and installed manually as in the following example.
+In Ubuntu 20.04, the iRODS iCommands package depends on the``libssl1.0.0`` package, which
+pre-depends on the ``multiarch-support_2.27`` package. The latter two packages are no longer
+available in the base repositories and need to be downloaded and installed manually.
 
 .. code:: bash
 
@@ -52,27 +52,25 @@ downloaded and installed manually as in the following example.
     http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
     https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
 
-  dpkg --install \
-    multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-    libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-    irods-icommands-4.1.10-ubuntu14-x86_64.deb
- 
+  dpkg --install multiarch-support_2.27-3ubuntu1.4_amd64.deb
+  dpkg --install libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb irods-icommands-4.1.10-ubuntu14-x86_64.deb
+
 **iCommands Installation for MAC OS X**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Download the CyVerse-Specific
    `iCommands Installer 4.1.9 <https://cyverse.atlassian.net/wiki/download/attachments/241869823/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472820029000&cacheVersion=1&api=v2>`_
-   
-2. Open the file by locating it in your Finder, right click on it and select 'Open'. When opening the package, you may get a security warning noting the file is from "an unidentified developer". Alternately, go to the OS 'System Preferences' and select the 'Security & Privacy' menu. At the bottom of the menu,  there should be and 'Open Anyway' button that will allow you to procede. 
+
+2. Open the file by locating it in your Finder, right click on it and select 'Open'. When opening the package, you may get a security warning noting the file is from "an unidentified developer". Alternately, go to the OS 'System Preferences' and select the 'Security & Privacy' menu. At the bottom of the menu,  there should be and 'Open Anyway' button that will allow you to procede.
 
 
-3. Follow the prompts to begin the installation. You will need to know your administrator password to install new software. 
- 
-.. note:: 
+3. Follow the prompts to begin the installation. You will need to know your administrator password to install new software.
+
+.. note::
 
     Newer Mac OS X now ships with ``zsh`` as its default shell rather than ``bash``. The installer will attempt to write some environmental variables to the ``.bashrc`` file which for ``zsh`` is called the `.zshrc`.
-    
-    By default, this installation will place iCommands in your system ``PATH`` so you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), you can add the `icommands` path by editing your ``.zshrc`` file: 
+
+    By default, this installation will place iCommands in your system ``PATH`` so you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), you can add the `icommands` path by editing your ``.zshrc`` file:
 
     .. code:: bash
 
@@ -80,7 +78,7 @@ downloaded and installed manually as in the following example.
       export PATH="/Applications/icommands/:$PATH"
       export IRODS_PLUGINS_HOME=/Applications/icommands/plugins/
 
-    and then in terminal source the file ``source ~/.zshrc``. 
+    and then in terminal source the file ``source ~/.zshrc``.
 
 ----
 
@@ -92,7 +90,7 @@ downloaded and installed manually as in the following example.
 
 Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OSX and Linux systems.
 
-1. Open terminal 
+1. Open terminal
 
 2. Type `iinit` command to start the configuration
    process. When prompted, enter the values shown below as comments in the
@@ -115,7 +113,7 @@ Once iCommands is installed and in the system `PATH` these instructions apply at
 CyVerse Data Store configuration:
 
 .. list-table::
-    
+
  * - host name
    - port #
    - username
@@ -129,7 +127,7 @@ CyVerse Data Store configuration:
 
 .. note::
     You can reconfigure iCommands for other iRODS data stores by changing your environment file
-    
+
 3. Verify that your iCommands installation works and is properly configured
    using the `ils` command to list the contents of your Data Store home
    directory.
@@ -231,13 +229,13 @@ You can access public data in the CyVerse Datastore with icommands using:
 **NetCDF iCommands**
 ~~~~~~~~~~~~~~~~~~~~
 
-For the Linux distributions there are three extra iCommands that support common NetCDF operations: 
+For the Linux distributions there are three extra iCommands that support common NetCDF operations:
 
-``inc`` performs data operations on a list of NetCDF files, 
+``inc`` performs data operations on a list of NetCDF files,
 
-``incarch`` archives a open ended time series data, 
+``incarch`` archives a open ended time series data,
 
-``incattr`` performs operation on attributes of NetCDF files. 
+``incattr`` performs operation on attributes of NetCDF files.
 
 Each of these commands accepts the ``-h`` command line option. When a command is called with this option, it displays the command's help documentation.  Please see this help documentation for more information.
 
