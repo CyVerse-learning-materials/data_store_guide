@@ -59,7 +59,7 @@ Use these instructions to connect to the WebDAV service with OS X Finder.
 
  1. Open Finder.
  2. From the menu bar, select Go, then Connect to Server (or type command K).
- 3. Enter the URL for the folder to access.
+ 3. Enter the URL for the folder to access. (e.g., ``https://data.cyverse.org/dav/iplant/home/<username>/``) 
  4. Provide your CyVerse username and password if prompted. 
 
 Accessing through Windows File Explorer
@@ -79,7 +79,7 @@ Use these instruction to open the WebDAV service from the Gnome desktop using Fi
 
  1. Open Files.
  2. Select Other Locations in the Places sidebar.
- 3. In the Connect to Server footer, enter the URL for the desired folder to access. Note: Files identifies TLS encrypted WebDAV URLs with the scheme davs. This means the base for the CyVerse URLs is ``davs://data.cyverse.org/`` instead of ``https://data.cyverse.org/``.
+ 3. In the Connect to Server footer, enter the URL for the desired folder to access. Note: Files identifies TLS encrypted WebDAV URLs with the scheme davs. This means the base for the CyVerse URLs is ``davs://data.cyverse.org/`` instead of ``https://data.cyverse.org/``.  (e.g., ``davs://data.cyverse.org/dav/iplant/home/<username>/``) 
  4. Click the neighboring Connect button.
  5. Provide your CyVerse username and password if prompted. 
 
