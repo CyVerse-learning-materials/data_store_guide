@@ -27,6 +27,18 @@ for a more comprehensive look at Data Store capabilities.
 .. #### Comment: If the platform has an ICON place it here
 .. #### Comment: Sort description of goal
 
+
+
+.. list-table::
+    :header-rows: 1
+
+    * - Maintainer
+      - Institution
+      - Contact
+   * - Your Name
+      - CyVerse / UA
+      - Yourname@email.com
+
 ----
 
 .. toctree::
@@ -99,8 +111,15 @@ Downloads, access, and services
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/data_store_guide>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+
 
 ----
 
