@@ -6,65 +6,75 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
+
 **Associate Data with Metadata**
 --------------------------------
 
 The Data Store supports a variety of solutions that allow you to associate your
-raw data with metadata. Metadata is of critical importance to a quality research,
-(See this article on `FAIR Principles <https://www.nature.com/articles/sdata201618>`_)
-yet it is often given less consideration until the time of publication and
-sharing. Here are a few metadata features that you can adopt and be aware of at
-the outset, see more of CyVerse's capabilities on the `Data Commons <https://wiki.cyverse.org/wiki/display/DC/Data+Commons+Home>`_
-page.
+raw data with metadata. Metadata is of critical importance to a quality
+research (see this article on |FAIR Principles|), yet it is often given less
+consideration until the time of publication and sharing. Here are a few
+metadata features that you can adopt and be aware of at the outset, see more of
+CyVerse's capabilities on the |Data Commons Wiki| page.
 
-.. #### Comment: short description
 
 **Some things to remember about the platform**
 
 - You can add metadata to a single file/folder, or in bulk to large collections
-  of data. You can use your own metadata schema, or apply one of our `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-AttachTemplate>`_
+  of data. You can use your own metadata schema, or apply one of our metadata templates.
 - The Discovery Environment supports several metadata templates that can be used
   for submission of metadata. Additional templates you may wish to use can be
-  found at resources like `FairSharing.org <https://fairsharing.org/>`_
-- Metadata can be managed through a graphical interface in the Discovery Environment
-  or using iCommands at the command line. We will only cover the Discovery Environment
-  in this guide. See instructions for `iCommands metadata <https://wiki.cyverse.org/wiki/display/DS/Adding+Metadata+to+a+File+Using+iRODS+imeta+%28Metadata%29+Commands>`_
-  on the CyVerse wiki.
+  found at resources like |FairSharing.org|.
+- Metadata can be managed through a graphical interface in the Discovery
+  Environment or using iCommands at the command line. We will only cover the
+  Discovery Environment in this guide. See instructions for |iCommands metadata| on the CyVerse wiki.
 
 ----
 
-*Adding Metadata to a Single File/folder in the Discovery Environment*
+*Viewing and Editing Metadata for a Single File/folder in the Discovery Environment*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
-   You must have `write` or `own` permission to edit an object's metadata.
+   .. note::
+      You must have `write` or `own` permission to edit an object's metadata.
 
-1. Log into the |discovery_enviornment|.
+  1. Log into the |Discovery Environment|.
 
-2. Click on the **`Data`** icon to open a Data window. Select (checkbox) a
-   single file/folder to add metadata to.
+  2. Click on the **`Data`** menu to view to browse for data. Select (checkbox)
+     a single file/folder to add metadata to.
 
-3. Click on the **`Metadata`** menu and select `Edit / View Metadata`. Click the
-   `Add` button to add a single metadata entry in Attribute, Value, Unit (AVU) format.
-   Click `Save` to save that entry.
+  3. Under the **More Actions** menu, click on the **`Metadata`** choice.
+     You will see existing metadata for the file/folder in the Attribute, Value, Unit (AVU) format.
 
-   |edit_view_metadata|
+      |edit_view_metadata|
 
-   .. tip::
-      A single piece of metadata, or an AVU, is made up of attributes, values,
-      and units. An attribute is a changeable property or characteristic of the
-      file or folder you have selected that can be set to a value. For example,
-      length is an attribute of a file, while 7 is its value, and cms is the
-      unit.
+     .. tip::
+       A single piece of metadata, or an AVU, is made up of attributes, values,
+       and units. An attribute is a changeable property or characteristic of the
+       file or folder you have selected that can be set to a value. For example,
+       length is an attribute of a file, while 7 is its value, and cms is the
+       unit.
 
-4. Click 'Save' to save all entries and apply the metadata.
+*Adding metadata*
+
+1. Click the "+ Add Metadata" button to add a new entry. Then follow the
+   directions for editing metadata below.
+
+*Editing or deleting metadata*
+
+1. You may use the "pencil" icon to edit an existing entry or the "trash can"
+   icon to delete an entry.
+
+2. After you have made any edits or deletion, click 'Save'  (on the top right
+   of the screen) to save all entries and apply the metadata.
+
+
 
 *Adding Metadata to Multiple Files/folder in the Discovery Environment*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Adding Metadata using a CyVerse Template**
 
-1. Log into the |discovery_enviornment|.
+1. Log into the |Discovery Environment|.
 
 2. Click on the **`Data`** icon to open a Data window. Click on the **`Metadata`**
    menu and select `Download template`. Select a template and click `OK` to
@@ -144,28 +154,10 @@ page.
 9. Select the corresponding template from the dropdown menu; click "Okay"
 
 Your metadata should now be applied to your files. You should receive a notification
-in the Discovery Enviornment and you can confirm the metadata has been correctly
+in the Discovery Environment and you can confirm the metadata has been correctly
 applied by selecting 'View / Edit Metadata' from the **`Metadata`** menu of a
 Data window.
 
-
-
-
-
-
-
-
-
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
 
 
 ----
@@ -178,9 +170,7 @@ Data window.
   click |Intercom| on the lower right-hand side of the page
 - Report an issue or submit a change:
   |Github Repo Link|
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
-
-
+- Send feedback: `learning@CyVerse.org <learning@CyVerse.org>`_
 
 ----
 
@@ -195,15 +185,3 @@ Data window.
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |edit_view_metadata| image:: ./img/data_store/edit_view_metadata.png
-    :width: 400
-    :height: 150
-.. |discovery_enviornment| raw:: html
-
-    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
-.. |blank| raw:: html
-
-    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/data_store/doi_metadata_template/guide.csv" target="_blank">blank.csv</a>
-.. |guide| raw:: html
-
-    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/data_store/doi_metadata_template/blank.csv" target="_blank">guide.csv</a>

@@ -15,18 +15,13 @@ Goal
 ----
 
 The Data Store is more than having a place to save your files. The Data Store
-is a way to manage the life cycle of your data - from the moment you create
-data, to publication, and beyond, there are a number of practices you want to
-follow to ensure the integrity and value of your data are maintained. The Data
-Store helps to maintain, share, and publish data without too much effort. This
+is a way to manage the life cycle of your data. From the moment you create
+data, to publication and beyond, there are a number of practices you should
+follow to ensure the integrity and value of your data are maintained. This
+includes making your data FAIR (Findable, Accessible, Interoperable, and
+Reusable). The Data Store helps to achieve this with less effort. This
 guide will cover the minimum needed to get you started. Please look through the
-`Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Using+the+Data+Store>`_
-for a more comprehensive look at Data Store capabilities.
-
-
-.. #### Comment: If the platform has an ICON place it here
-.. #### Comment: Sort description of goal
-
+|Data Store Manual| for a more comprehensive look at Data Store capabilities.
 
 
 .. list-table::
@@ -35,9 +30,9 @@ for a more comprehensive look at Data Store capabilities.
     * - Maintainer
       - Institution
       - Contact
-   * - Your Name
-      - CyVerse / UA
-      - Yourname@email.com
+    * - Jason Williams
+      - CyVerse / CSHL
+      - Williams@cshl.edu
 
 ----
 
@@ -78,26 +73,26 @@ Downloads, access, and services
       - Link/Download
     * - CyVerse account (optional)
       - CyVerse supports anonymous data access to public data sets in the
-        `CyVerse Data Commons <http://datacommons.cyverse.org/>`_. This guide is
+        |CyVerse Data Commons|. This guide is
         written with the assumption you are a CyVerse account holder. See the
-        `Data Store Manual`_ for more info on anonymous access.
-      - `Register <https://user.cyverse.org/>`_
+        |Data Store Manual| for more info on anonymous access.
+      - - Register: |CyVerse User Portal|
     * - Cyberduck (optional)
       - Cyberduck is a 3rd party application with a graphical user interface
         that allows you to easily upload and download data. (available for Mac
         /PC). You will also need to download our connection profile (bookmark).
-      - - `Cyberduck <https://cyberduck.io/>`_ (Cyberduck website)
-        - `Cyberduck connection profile <https://cyverse.atlassian.net/wiki/download/attachments/241869843/CyVerseDataStore.cyberduckprofile?version=1&modificationDate=1568640173000&cacheVersion=1&api=v2>`_
+      - - |Cyberduck Website|
+        - |Cyberduck connection profile|
     * - iCommands (optional)
       - iCommands are a set of command line binaries that can be used to
         interact with the Data Store. Download iCommands (available for Mac/
         Linux) if you want to use these functionalities.
-      - - iCommands (`Mac <https://wiki.cyverse.org/wiki/download/attachments/28117338/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472845229000&api=v2>`_)
-        - iCommands (`Linux <https://irods.org/download/>`_ - **scroll down to iCommands CLI**)
+      - - iCommands (for Mac) |Mac OS iCommands Download|
+        - iCommands (for Linux; see iCommands CLI) |Linux CLI iCommands Download|
     * - Spreadsheet editor (optional)
-      - To edit a metadata template in .csv format, we recommend using a spreadsheet
-        editor such as Microsoft Excel or LibreOffice Calc.
-      - Free LibreOffice `Download <https://www.libreoffice.org/>`_
+      - To edit a metadata template in .csv format, we recommend using a
+        spreadsheet editor such as Microsoft Excel or LibreOffice Calc.
+      - - Free |LibreOffice|
 
 .. warning::
 		When uploading your data to the Data Store you should not upload files/folders
@@ -106,6 +101,10 @@ Downloads, access, and services
 		> , ? /). The Apps on the Discovery Environment and most command line apps
 		will typically not tolerate these characters. For long file/folder names the
 		use of underscores (e.g. experiment_one.fastq) is the recommended practice.
+
+.. note::
+
+
 
 ----
 
@@ -117,9 +116,7 @@ Downloads, access, and services
   click |Intercom| on the lower right-hand side of the page
 - Report an issue or submit a change:
   |Github Repo Link|
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
-
-
+- Send feedback: `learning@CyVerse.org <learning@CyVerse.org>`_
 
 ----
 
