@@ -7,58 +7,48 @@
 **Command Line Transfer with iCommands**
 ----------------------------------------
 
-iCommands is a collection of tools developed by the `iRODS <https://irods.org/>`_
-project. iRODS is the technology that supports the CyVerse Data Store. Using
-iCommands is the most flexible way to interact with the Data Store.
-
-.. #### Comment: short description
+iCommands is a collection of tools developed by the `iRODS <https://irods.org/>`_project. iRODS is 
+the technology that supports the CyVerse Data Store. Using iCommands is the most flexible way to 
+interact with the Data Store. For more information on them, see the *iCommands* section of the 
+`iRODS Documentation <https://docs.irods.org/4.2.8/>`_.
 
 **Some things to remember about iCommands**
 
 - This is a *command line* tool, operated in a terminal.
-- Poor support for *Windows OS*: Currently, we have not tested a Windows-only shell version
-  of iCommands. We do suggest installing `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and following the Linux installation instructions 
+- There is poor support for *Windows OS*: Currently, we have not tested a Windows-only shell version
+  of iCommands. We do suggest installing 
+  `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and 
+  following the Linux installation instructions.
 
 ----
 
 **iCommands Installation for Linux**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. On a linux OS you can use the package managers from iRODS to install in the termainal:
+On a linux OS you can use a package manager to install iCommands in the terminal. Instructions for
+for configuring the appropriate package manager can be be found on the 
+`iRODS Packages <https://packages.irods.org/>`_ webpage. Here are a few iCommands installation 
+examples.
 
 **CentOS:**
 
 .. code:: bash
 
-  yum install https://files.renci.org/pub/irods/releases/4.1.10/centos7/irods-icommands-4.1.10-centos7-x86_64.rpm
+  sudo yum install irods-icommands
 
-**Debian/Ubuntu 18.04 or older:**
-
-.. code:: bash
-
-  wget https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
-  apt-get install ./irods-icommands-4.1.10-ubuntu14-x86_64.deb
-
-**Ubuntu 20.04**
-
-In Ubuntu 20.04, the iRODS iCommands package depends on the ``multiarch-support_2.27`` and
-``libssl1.0.0`` packages that are no longer available in the base repositories. These need to be
-downloaded and installed manually as in the following example.
+**Debian/Ubuntu:**
 
 .. code:: bash
 
-  wget \
-    http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-    http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-    https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
+  sudo apt update
+  sudo apt install irods-icommands
 
-  dpkg --install \
-    multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-    libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-    irods-icommands-4.1.10-ubuntu14-x86_64.deb
- 
-**iCommands Installation for MAC OS X**
+----
+
+**iCommands Installation for Mac OS X**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+iRODS doesn't currently support Mac OS X, but CyVerse has built an installer for it.
 
 1. Download the CyVerse-Specific
    `iCommands Installer 4.1.9 <https://cyverse.atlassian.net/wiki/download/attachments/241869823/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472820029000&cacheVersion=1&api=v2>`_
@@ -90,7 +80,7 @@ downloaded and installed manually as in the following example.
 .. note::
     If using iCommands in an HPC environment, which has many systems with iCommands installed, run the ``module load irods`` command to get access to iRODS iCommands.
 
-Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OSX and Linux systems.
+Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OS X and Linux systems.
 
 1. Open terminal 
 
@@ -101,14 +91,14 @@ Once iCommands is installed and in the system `PATH` these instructions apply at
 .. code:: bash
 
      $ iinit
-     One or more fields in your iRODS environment file (.irodsEnv) are
+     One or more fields in your iRODS environment file (irods_environment.json) are
      missing; please enter them.
      Enter the host name (DNS) of the server to connect to: data.cyverse.org
      Enter the port number: 1247
      Enter your irods user name: #your_cyverse_username
      Enter your irods zone: iplant
      Those values will be added to your environment file (for use by
-     other i-commands) if the login succeeds.
+     other iCommands) if the login succeeds.
 
      Enter your current iRODS password: #your_cyverse_password
 
