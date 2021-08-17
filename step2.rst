@@ -25,22 +25,62 @@ interact with the Data Store. For more information on them, see the *iCommands* 
 **iCommands Installation for Linux**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On a linux OS you can use a package manager to install iCommands in the terminal. Instructions for
-for configuring the appropriate package manager can be be found on the 
-`iRODS Packages <https://packages.irods.org/>`_ webpage. Here are a few iCommands installation 
-examples.
+On a linux OS you can use a package manager to install iCommands in the terminal. 
 
 **CentOS:**
+
+Instructions for configuring the iRODS repository can be be found on the 
+`iRODS Packages <https://packages.irods.org/>`_ webpage. After configurating the repository, ``yum`` 
+can be used to install the iCommands package ``irods-icommands``.
 
 .. code:: bash
 
   sudo yum install irods-icommands
 
-**Debian/Ubuntu:**
+**Ubuntu 18.04:**
+
+Instructions for configuring the iRODS repository can be be found on the 
+`iRODS Packages <https://packages.irods.org/>`_ webpage. After configurating the repository, ``apt``
+can be used to install the iCommands package ``irods-icommands``.
 
 .. code:: bash
 
+  sudo apt install irods-icommands
+
+**Ubuntu 20.04:**
+
+iRODS doesn't current support Ubuntu 20.04 yet. However, the one for Ubuntu 18.04 works as long as a 
+few extra packages are installed.
+
+Here are the commands to configure the iRODS repository.
+
+.. code:: bash
+
+  wget --quiet --output-document - \
+      https://packages.irods.org/irods-signing-key.asc \
+    | sudo apt-key add -
+  echo deb [arch=amd64] https://packages.irods.org/apt/ bionic main \
+    | sudo tee /etc/apt/sources.list.d/renci-irods.list
   sudo apt update
+
+Prior to installing the iCommands package, a few 18.04 packages neet to be installed that are not 
+available for 20.04. Here are the comands to install these packages.
+
+.. code:: bash
+
+  wget --directory-prefix /tmp/ \
+    http://security.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.22-1ubuntu0.18.04.2_all.deb \
+    http://security.ubuntu.com/ubuntu/pool/main/r/requests/python-requests_2.18.4-2ubuntu0.1_all.deb \
+    http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb
+  sudo apt install \
+    /tmp/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb \
+    /tmp/python-urllib3_1.22-1ubuntu0.18.04.2_all.deb \
+    /tmp/python-requests_2.18.4-2ubuntu0.1_all.deb
+
+Now ``apt`` can be used to install the iCommands package ``irods-icommands``.
+
+.. code:: bash
+
   sudo apt install irods-icommands
 
 ----
