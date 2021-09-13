@@ -43,6 +43,22 @@ examples.
   sudo apt update
   sudo apt install irods-icommands
 
+If the above does not work for you (e.g., no support for Ubuntu 20), try
+
+.. code:: base
+
+  sudo apt update
+
+  wget \
+  http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+  http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+  https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
+
+  sudo dpkg --install \
+  multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+  libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+  irods-icommands-4.1.10-ubuntu14-x86_64.deb
+
 ----
 
 **iCommands Installation for Mac OS X**
