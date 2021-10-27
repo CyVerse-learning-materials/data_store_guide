@@ -84,7 +84,7 @@ Use these instruction to open the WebDAV service from the Gnome desktop using Fi
 
  1. Open Files.
  2. Select Other Locations in the Places sidebar.
- 3. In the Connect to Server footer, enter the URL for the desired folder to access. Note: Files identifies TLS encrypted WebDAV URLs with the scheme davs. This means the base for the CyVerse URLs is ``davs://data.cyverse.org/`` instead of ``https://data.cyverse.org/``.  (e.g., ``davs://data.cyverse.org/dav/iplant/home/<username>/``) 
+ 3. In the Connect to Server footer, enter the URL for the desired folder to access. Note: Files identifies TLS encrypted WebDAV URLs with the scheme davs. This means the base for the CyVerse URLs is ``davs://data.cyverse.org/`` instead of ``https://data.cyverse.org/``.  (e.g., ``davs://data.cyverse.org/dav/iplant/home/<username>/``)
  4. Click the neighboring Connect button.
  5. Provide your CyVerse username and password if prompted.
 
@@ -132,4 +132,3 @@ these are detailed in the full |Data Store Manual|.
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
-.. _Home_Icon: http://learning.cyverse.org/

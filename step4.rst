@@ -80,7 +80,7 @@ own files/folders
 
    .. tip::
 
-      You can share several files/folders at once by selecting them and then clicking the "Add to Bag" button in the Data window. 
+      You can share several files/folders at once by selecting them and then clicking the "Add to Bag" button in the Data window.
 
    .. hint::
       By managing access to data, the DE allows you to share large datasets
@@ -145,7 +145,6 @@ own files/folders
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
 .. |data_window| image:: ./img/de/data_window.png
     :width: 550
     :height: 300

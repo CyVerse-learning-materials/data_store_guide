@@ -296,4 +296,3 @@ In addition to the commands above, there are several frequently used iCommands
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
-.. _Home_Icon: http://learning.cyverse.org/

@@ -129,7 +129,3 @@ Downloads, access, and services
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
-.. |data_store_icon| image:: ./img/data_store/datastore-icon.png
-    :width: 100
-    :height: 150
