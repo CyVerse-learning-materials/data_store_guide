@@ -13,8 +13,8 @@
     :target: https://de.cyverse.org/de/  target="_blank"
 
 .. |edit_view_metadata| image:: ./img/data_store/edit_view_metadata.png
-    :width: 600
-    :height: 200
+    :width: 550
+    :height: 250
 
 .. |public link| image:: ./img/data_store/public_link.png
     :width: 600
@@ -39,6 +39,20 @@
 .. |cyberduck_transfers2| image:: ./img/data_store/cyberduck_transfers2.png
     :width: 300
     :height: 250
+.. |apps icon| image:: ./img/de/apps_icon.png
+    :width: 40px
+
+.. |analyses icon| image:: ./img/de/analyses_icon.png
+    :width: 40px
+
+.. |data icon| image:: ./img/de/data_icon.png
+    :width: 40px
+
+.. |download icon| image:: ./img/de/download_icon.png
+    :width: 40px
+
+.. |kebab icon| image:: ./img/de/kebab_icon.png
+    :width: 10px
 
 
 .. |Data Store Manual| raw:: html
