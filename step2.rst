@@ -7,17 +7,17 @@
 **Command Line Transfer with iCommands**
 ----------------------------------------
 
-iCommands is a collection of tools developed by the `iRODS <https://irods.org/>`_ project. iRODS is 
-the technology that supports the CyVerse Data Store. Using iCommands is the most flexible way to 
-interact with the Data Store. For more information on them, see the *iCommands* section of the 
+iCommands is a collection of tools developed by the `iRODS <https://irods.org/>`_ project. iRODS is
+the technology that supports the CyVerse Data Store. Using iCommands is the most flexible way to
+interact with the Data Store. For more information on them, see the *iCommands* section of the
 `iRODS Documentation <https://docs.irods.org/4.2.8/>`_.
 
 **Some things to remember about iCommands**
 
 - This is a *command line* tool, operated in a terminal.
 - There is poor support for *Windows OS*: Currently, we have not tested a Windows-only shell version
-  of iCommands. We do suggest installing 
-  `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and 
+  of iCommands. We do suggest installing
+  `Windows Subsystem for Linux v2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_ and
   following the Linux installation instructions.
 
 ----
@@ -26,8 +26,8 @@ interact with the Data Store. For more information on them, see the *iCommands* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On a linux OS you can use a package manager to install iCommands in the terminal. Instructions for
-for configuring the appropriate package manager can be be found on the 
-`iRODS Packages <https://packages.irods.org/>`_ webpage. Here are a few iCommands installation 
+for configuring the appropriate package manager can be be found on the
+`iRODS Packages <https://packages.irods.org/>`_ webpage. Here are a few iCommands installation
 examples.
 
 **CentOS:**
@@ -68,17 +68,17 @@ iRODS doesn't currently support Mac OS X, but CyVerse has built an installer for
 
 1. Download the CyVerse-Specific
    `iCommands Installer 4.1.9 <https://cyverse.atlassian.net/wiki/download/attachments/241869823/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472820029000&cacheVersion=1&api=v2>`_
-   
-2. Open the file by locating it in your Finder, right click on it and select 'Open'. When opening the package, you may get a security warning noting the file is from "an unidentified developer". Alternately, go to the OS 'System Preferences' and select the 'Security & Privacy' menu. At the bottom of the menu,  there should be and 'Open Anyway' button that will allow you to procede. 
+
+2. Open the file by locating it in your Finder, right click on it and select 'Open'. When opening the package, you may get a security warning noting the file is from "an unidentified developer". Alternately, go to the OS 'System Preferences' and select the 'Security & Privacy' menu. At the bottom of the menu,  there should be and 'Open Anyway' button that will allow you to procede.
 
 
-3. Follow the prompts to begin the installation. You will need to know your administrator password to install new software. 
- 
-.. note:: 
+3. Follow the prompts to begin the installation. You will need to know your administrator password to install new software.
+
+.. note::
 
     Newer Mac OS X now ships with ``zsh`` as its default shell rather than ``bash``. The installer will attempt to write some environmental variables to the ``.bashrc`` file which for ``zsh`` is called the `.zshrc`.
-    
-    By default, this installation will place iCommands in your system ``PATH`` so you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), you can add the `icommands` path by editing your ``.zshrc`` file: 
+
+    By default, this installation will place iCommands in your system ``PATH`` so you should be ready to run iCommands immediately at the terminal. If this does not happen (i.e. you get an error when trying to run ``iinit``), you can add the `icommands` path by editing your ``.zshrc`` file:
 
     .. code:: bash
 
@@ -86,7 +86,7 @@ iRODS doesn't currently support Mac OS X, but CyVerse has built an installer for
       export PATH="/Applications/icommands/:$PATH"
       export IRODS_PLUGINS_HOME=/Applications/icommands/plugins/
 
-    and then in terminal source the file ``source ~/.zshrc``. 
+    and then in terminal source the file ``source ~/.zshrc``.
 
 ----
 
@@ -98,7 +98,7 @@ iRODS doesn't currently support Mac OS X, but CyVerse has built an installer for
 
 Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OS X and Linux systems.
 
-1. Open terminal 
+1. Open terminal
 
 2. Type `iinit` command to start the configuration
    process. When prompted, enter the values shown below as comments in the
@@ -121,7 +121,7 @@ Once iCommands is installed and in the system `PATH` these instructions apply at
 CyVerse Data Store configuration:
 
 .. list-table::
-    
+
  * - host name
    - port #
    - username
@@ -135,7 +135,7 @@ CyVerse Data Store configuration:
 
 .. note::
     You can reconfigure iCommands for other iRODS data stores by changing your environment file
-    
+
 3. Verify that your iCommands installation works and is properly configured
    using the `ils` command to list the contents of your Data Store home
    directory.
@@ -168,12 +168,12 @@ You can access public data in the CyVerse Datastore with icommands using:
 
    When uploading your data to the Data Store you should not upload files/folders
    with names containing spaces (e.g. experiment one.fastq) or name that contain
-   special characters (e.g. ~ ` ! @ # $ % ^ & * ( ) + = { } [ ] | \ : ; " ' <
+   special characters (e.g. ~ `` ! @ # $ % ^ & * ( ) + = { } [ ] | \ : ; "" '' <
    > , ? /). The Apps on the Discovery Environment and most command line apps
    will typically not tolerate these characters. For long file/folder names the
    use of underscores (e.g. experiment_one.fastq) is the recommended practice.
 
-.. tip::
+  .. tip::
 
     There are several optional arguments that the upload iCommand `iput` can
     take:
@@ -237,15 +237,15 @@ You can access public data in the CyVerse Datastore with icommands using:
 **NetCDF iCommands**
 ~~~~~~~~~~~~~~~~~~~~
 
-For the Linux distributions there are three extra iCommands that support common NetCDF operations: 
+For the Linux distributions there are three extra iCommands that support common NetCDF operations:
 
-``inc`` performs data operations on a list of NetCDF files, 
+``inc`` performs data operations on a list of NetCDF files,
 
-``incarch`` archives a open ended time series data, 
+``incarch`` archives a open ended time series data,
 
-``incattr`` performs operation on attributes of NetCDF files. 
+``incattr`` performs operation on attributes of NetCDF files.
 
-Each of these commands accepts the ``-h`` command line option. When a command is called with this option, it displays the command's help documentation.  Please see this help documentation for more information.
+Each of these commands accepts the ``-h`` command line option. When a command is called with this option, it displays the command\'s help documentation.  Please see this help documentation for more information.
 
 **Installation**
 
