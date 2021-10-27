@@ -1,0 +1,181 @@
+.. Comment: Version 2.0, May 2020
+.. Comment: URLS
+
+.. |Github Repo Link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/data_store_guide" target="blank">Github Repo Link</a>
+
+.. Comment: Fix this link if you are using a quicklaunch button
+
+.. |CyVerse_launch| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/  target="_blank"
+
+.. |edit_view_metadata| image:: ./img/data_store/edit_view_metadata.png
+    :width: 550
+    :height: 250
+
+.. |public link| image:: ./img/data_store/public_link.png
+    :width: 600
+    :height: 200
+
+.. |sharing| image:: ./img/data_store/sharing.png
+    :width: 600
+    :height: 200
+
+.. |cyberduck_config_window| image:: ./img/data_store/cyberduck_config.png
+    :width: 400
+    :height: 500
+.. |cyberduck_bookmark| image:: ./img/data_store/cyberduck_bookmark.png
+    :width: 400
+    :height: 200
+.. |cyberduck_window| image:: ./img/data_store/cyberduck_window.png
+    :width: 400
+    :height: 200
+.. |cyberduck_transfers| image:: ./img/data_store/cyberduck_transfers.png
+    :width: 300
+    :height: 250
+.. |cyberduck_transfers2| image:: ./img/data_store/cyberduck_transfers2.png
+    :width: 300
+    :height: 250
+.. |apps icon| image:: ./img/de/apps_icon.png
+    :width: 40px
+
+.. |analyses icon| image:: ./img/de/analyses_icon.png
+    :width: 40px
+
+.. |data icon| image:: ./img/de/data_icon.png
+    :width: 40px
+
+.. |download icon| image:: ./img/de/download_icon.png
+    :width: 40px
+
+.. |kebab icon| image:: ./img/de/kebab_icon.png
+    :width: 10px
+
+
+.. |Data Store Manual| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/display/DS/Using+the+Data+Store" target="blank">Data Store Manual</a>
+
+.. |CyVerse Data Commons| raw:: html
+
+   <a href="http://datacommons.cyverse.org/" target="blank">CyVerse Data Commons</a>
+
+.. |Cyberduck Website| raw:: html
+
+   <a href="https://cyberduck.io/download/" target="blank">Cyberduck Website</a>
+
+.. |Cyberduck connection profile| raw:: html
+
+   <a href="https://cyverse.atlassian.net/wiki/download/attachments/241869843/CyVerseDataStore.cyberduckprofile?version=1&modificationDate=1568640173000&cacheVersion=1&api=v2" target="blank">Cyberduck connection profile</a>
+
+.. |Mac OS iCommands Download| raw:: html
+
+   <a href="https://cyverse.atlassian.net/wiki/download/attachments/241869823/cyverse-icommands-4.1.9.pkg?version=3&modificationDate=1472820029000&cacheVersion=1&api=v2" target="blank">Mac OS iCommands Download</a>
+
+.. |Linux CLI iCommands Download| raw:: html
+
+   <a href="https://irods.org/download/" target="blank">Linux CLI iCommands Download</a>
+
+.. |LibreOffice| raw:: html
+
+   <a href="https://www.libreoffice.org/" target="blank">LibreOffice</a>
+
+
+.. |iRODS| raw:: html
+
+   <a href="https://irods.org/" target="blank">iRODS</a>
+
+.. |Windows Linux Subsystem| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="blank">Windows Linux Subsystem</a>
+
+.. |full iCommands iput documentation| raw:: html
+
+   <a href="https://docs.irods.org/master/icommands/user/#iput" target="blank">full iCommands iput documentation</a>
+
+.. |full iCommands iget documentation| raw:: html
+
+   <a href="https://docs.irods.org/master/icommands/user/#iget" target="blank">full iCommands iget documentation</a>
+
+.. |CentOS7 NetCDF API| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/download/attachments/28117338/irods-api-plugin-netcdf-1.0-centos7.rpm?version=1&modificationDate=1552065196000&api=v2" target="blank">CentOS7 NetCDF API</a>
+
+.. |Ubuntu 14+ NetCDF API| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/download/attachments/28117338/irods-icommands-netcdf-1.0-ubuntu14.deb?version=1&modificationDate=1549392566000&api=v2" target="blank">Ubuntu 14+ NetCDF API</a>
+
+.. |RENCI's iRODs website| raw:: html
+
+   <a href="https://files.renci.org/pub/irods/releases/" target="blank">RENCI's iRODs website</a>
+
+.. |iRODS iCommands Documentation| raw:: html
+
+   <a href="https://docs.irods.org/4.2.1/icommands/user/" target="blank">iRODS iCommands Documentation</a>
+
+.. |FAIR Principles| raw:: html
+
+   <a href="https://www.nature.com/articles/sdata201618" target="blank">FAIR Principles</a>
+
+.. |Data Commons Wiki| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/display/DC/Data+Commons+Home" target="blank">Data Commons Wiki</a>
+
+.. |FairSharing.org| raw:: html
+
+   <a href="ttps://fairsharing.org/" target="blank">FairSharing.org</a>
+
+.. |iCommands metadata| raw:: html
+
+   <a href="https://cyverse.atlassian.net/wiki/spaces/DS/pages/241869820/Adding%2BMetadata%2Bto%2Ba%2BFile%2BUsing%2BiRODS%2Bimeta%2BMetadata%2BCommands" target="blank">iCommands metadata</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
+
+.. |XXXXXX| raw:: html
+
+   <a href="XXXXXXXX" target="blank">XXXXXXX</a>
