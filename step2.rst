@@ -16,12 +16,12 @@ iCommands is the most flexible way to interact with the Data Store. This
 section will cover the basics of installation and use; see also the official
 |iRODS iCommands Documentation|. 
 
-
 **Some things to remember about iCommands**
 
 - This is a *command line* tool, operated in a terminal.
 - There is poor support for *Windows OS*: Currently, we have not tested a
   Windows-only shell version of iCommands. We do suggest installing |Windows Linux Subsystem| and following the Linux installation instructions.
+
 
 ----
 
@@ -31,23 +31,44 @@ section will cover the basics of installation and use; see also the official
   1. On a linux OS you can use the package managers from iRODS to install in
      the terminal:
 
+**CentOS:**
+
+.. code:: bash
+
+  sudo yum install irods-icommands
+  # if that does not work try 
+  # yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
+
+
 **Debian/Ubuntu:**
 
 .. code:: bash
 
-  wget https://files.renci.org/pub/irods/releases/4.1.12/ubuntu14/irods-icommands-4.1.12-ubuntu14-x86_64.deb
-  apt-get install ./irods-icommands-4.1.12-ubuntu14-x86_64.deb
+  sudo apt update
+  sudo apt install irods-icommands
 
-**Centos:**
+If the above does not work for you (e.g., no support for Ubuntu 20), try
 
-.. code:: bash
+.. code:: base
 
-  yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
+  sudo apt update
+
+  wget \
+  http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+  http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+  https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
+
+  sudo dpkg --install \
+  multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+  libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+  irods-icommands-4.1.10-ubuntu14-x86_64.deb
 
 ----
 
-*iCommands Installation for MAC OS X*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**iCommands Installation for Mac OS X**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+iRODS doesn't currently support Mac OS X, but CyVerse has built an installer for it.
 
   1. Download the CyVerse-specific |Mac OS iCommands Download|.
 
@@ -59,6 +80,7 @@ section will cover the basics of installation and use; see also the official
 
   3. Follow the prompts to begin the installation. You will need to know your
      administrator password to install new software.
+
 
 .. note::
 
@@ -82,7 +104,7 @@ section will cover the basics of installation and use; see also the official
 .. note::
     If using iCommands in an HPC environment, which already has iCommands installed, run the ``module load irods`` command to get access to iRODS iCommands.
 
-Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OSX and Linux systems.
+Once iCommands is installed and in the system `PATH` these instructions apply at a terminal in Mac OS X and Linux systems.
 
   1. Open terminal
 
@@ -92,37 +114,23 @@ Once iCommands is installed and in the system `PATH` these instructions apply at
 
      CyVerse Data Store configuration:
 
-      .. list-table::
+CyVerse Data Store configuration:
 
-        * - host name
-          - port #
-          - username
-          - zone
-          - password
-        * - `data.cyverse.org`
-          - `1247`
-          - CyVerse UserID
-          - `iplant`
-          - CyVerse Password
+.. list-table::
 
+ * - host name
+   - port #
+   - username
+   - zone
+   - password
+ * - `data.cyverse.org`
+   -  `1247`
+   - CyVerse UserID
+   - `iplant`
+   - CyVerse Password
 
-
-    .. code:: bash
-
-      $ iinit
-      One or more fields in your iRODS environment file (.irodsEnv) are
-      missing; please enter them.
-      Enter the host name (DNS) of the server to connect to: data.cyverse.org
-      Enter the port number: 1247
-      Enter your irods user name: #your_cyverse_username
-      Enter your irods zone: iplant
-      Those values will be added to your environment file (for use by
-      other i-commands) if the login succeeds.
-
-      Enter your current iRODS password: #your_cyverse_password
-
-   .. note::
-         You can reconfigure iCommands for other iRODS data stores by changing your environment file
+.. note::
+    You can reconfigure iCommands for other iRODS data stores by changing your environment file
 
   3. Verify that your iCommands installation works and is properly configured
      using the ``ils`` command to list the contents of your Data Store home
@@ -170,7 +178,6 @@ See the |full iCommands iput documentation| for more information.
       $ iput -rPT /local_directory /iplant/home/cyverse_username/destination_folder
         # This command will output the progress as it uploads your local directory
 
-   .. tip::
 
     There are several optional arguments that the upload iCommand `iput` can
     take:
@@ -230,7 +237,8 @@ For the Linux distributions there are three extra iCommands that support common 
  - ``incarch`` archives a open ended time series data,
  - ``incattr`` performs operation on attributes of NetCDF files.
 
-Each of these commands accepts the ``-h`` command line option. When a command is called with this option, it displays the command's help documentation.  Please see this help documentation for more information.
+
+Each of these commands accepts the ``-h`` command line option. When a command is called with this option, it displays the command\'s help documentation.  Please see this help documentation for more information.
 
   **Installation**
 
