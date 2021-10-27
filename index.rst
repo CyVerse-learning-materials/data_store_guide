@@ -102,8 +102,6 @@ Downloads, access, and services
 		will typically not tolerate these characters. For long file/folder names the
 		use of underscores (e.g. experiment_one.fastq) is the recommended practice.
 
-.. note::
-
 
 
 ----
