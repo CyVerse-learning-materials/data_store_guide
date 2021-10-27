@@ -14,7 +14,7 @@ iCommands is a collection of tools developed by the |iRODS|
 project. iRODS is the technology that supports the CyVerse Data Store. Using
 iCommands is the most flexible way to interact with the Data Store. This
 section will cover the basics of installation and use; see also the official
-|iRODS iCommands Documentation|. 
+|iRODS iCommands Documentation|.
 
 **Some things to remember about iCommands**
 
@@ -36,7 +36,7 @@ section will cover the basics of installation and use; see also the official
 .. code:: bash
 
   sudo yum install irods-icommands
-  # if that does not work try 
+  # if that does not work try
   # yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
 
 
@@ -49,7 +49,7 @@ section will cover the basics of installation and use; see also the official
 
 If the above does not work for you (e.g., no support for Ubuntu 20), try
 
-.. code:: base
+.. code:: bash
 
   sudo apt update
 
@@ -66,7 +66,7 @@ If the above does not work for you (e.g., no support for Ubuntu 20), try
 ----
 
 **iCommands Installation for Mac OS X**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 iRODS doesn't currently support Mac OS X, but CyVerse has built an installer for it.
 

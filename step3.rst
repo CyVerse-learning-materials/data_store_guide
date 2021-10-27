@@ -32,7 +32,7 @@ CyVerse's capabilities on the |Data Commons Wiki| page.
 ----
 
 *Viewing and Editing Metadata for a Single File/folder in the Discovery Environment*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    .. note::
       You must have `write` or `own` permission to edit an object's metadata.
@@ -142,7 +142,7 @@ CyVerse's capabilities on the |Data Commons Wiki| page.
        enter the full path of the top-level folder (e.g. `/iplant/home/YOURUSERNAME/FOLDERNAME`)
 
     b. In the remaining columns in the first row, enter the values for each
-       file/attribute combination.
+       file/attribute combinations
 
     c. Repeat for each file, but make sure to add the full file path (e.g. `/
        iplant/home/YOURUSERNAME/FOLDERNAME`) for each file.
@@ -181,7 +181,7 @@ CyVerse's capabilities on the |Data Commons Wiki| page.
 
 Your metadata should now be applied to your files. You should receive a
 notification in the Discovery Environment and you can confirm the metadata has
-been correctly applied by following the steps in the preceding section to view 
+been correctly applied by following the steps in the preceding section to view
 metadata.
 
 
