@@ -63,10 +63,16 @@ If the above does not work for you (e.g., no support for Ubuntu 20), try
   libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
   irods-icommands-4.1.10-ubuntu14-x86_64.deb
 
-** Arm64/Aarch64 **
+**Arm64/Aarch64:**
 
 A CyVerse community user compiled i-commands for Raspberry Pi (and tested in NVIDIA Jetsons): https://github.com/jmscslgroup/libpanda/blob/master/scripts/irods-icommands-debs.tgz
 
+.. code:: bash
+
+  wget https://github.com/jmscslgroup/libpanda/raw/master/scripts/irods-icommands-debs.tgz
+  tar zxvf irods-icommands-debs.tgz
+  cd irods-icommands-debs/
+  ./install.sh
 
 ----
 
