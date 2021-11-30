@@ -38,10 +38,17 @@ can be used to install the iCommands package ``irods-icommands``.
 
 .. code:: bash
 
+  sudo rpm --import https://packages.irods.org/irods-signing-key.asc
+  wget -qO - https://packages.irods.org/renci-irods.yum.repo \
+    | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
   sudo yum install irods-icommands
-  # if that does not work try
-  # yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
 
+If that does not work, an older version of iCommands, 4.1.12, can be installed from RENCI's website.
+
+.. code:: base
+
+  sudo yum install \
+    https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
 
 **Ubuntu 18.04:**
 
@@ -51,6 +58,11 @@ can be used to install the iCommands package ``irods-icommands``.
 
 .. code:: bash
 
+  wget -qO - https://packages.irods.org/irods-signing-key.asc \
+    | sudo apt-key add -
+  echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" \
+    | sudo tee /etc/apt/sources.list.d/renci-irods.list
+  sudo apt-get update
   sudo apt install irods-icommands
 
 **Ubuntu 20.04:**
@@ -62,10 +74,9 @@ Here are the commands to configure the iRODS repository.
 
 .. code:: bash
 
-  wget --quiet --output-document - \
-      https://packages.irods.org/irods-signing-key.asc \
+  wget -qO - https://packages.irods.org/irods-signing-key.asc \
     | sudo apt-key add -
-  echo deb [arch=amd64] https://packages.irods.org/apt/ bionic main \
+  echo "deb [arch=amd64] https://packages.irods.org/apt/ bionic main" \
     | sudo tee /etc/apt/sources.list.d/renci-irods.list
   sudo apt update
 
@@ -89,21 +100,20 @@ Now ``apt`` can be used to install the iCommands package ``irods-icommands``.
 
   sudo apt install irods-icommands
 
-If the above does not work for you (e.g., no support for Ubuntu 20), try
+If the above does not work, e.g., incomplete support for Ubuntu 20,04, an older version of 
+iCommands, 4.1.10, can be installed by doing the following.
 
 .. code:: bash
 
   sudo apt update
-
   wget \
-  http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-  http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-  https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
-
+    http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+    http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+    https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
   sudo dpkg --install \
-  multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-  libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-  irods-icommands-4.1.10-ubuntu14-x86_64.deb
+    multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+    libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+    irods-icommands-4.1.10-ubuntu14-x86_64.deb
 
 **Arm64/Aarch64:**
 
