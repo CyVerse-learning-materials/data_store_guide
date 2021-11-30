@@ -1,1 +1,5 @@
 .vscode
+_build/
+*.pyc
+.ropeproject/
+.DS_store

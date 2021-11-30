@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -30,58 +33,54 @@ Public Link.
   , but less secure method for file transfer. Do not share sensitive/private
   data using these links.
 
-1. If necessary, login to the |discovery_enviornment|.
+1. If necessary, login to the |Discovery Environment|.
 
-2. In the Data window, select (checkbox) an individual file you wish to share.
+2. In the Data window, select (checkbox) one or more individual file(s) (not
+   folders) you wish to share.
 
-3. From the *Share* menu, select *Create a Public Link*.
+3. From the *More actions* menu, select *Public Link(s)*.
 
-4. In the “Manage Data Links” window, select the file you wish to share, and
-   click **Create**.
-
-5. A new URL should appear beneath the file name. Click on this URL and the
-   click on Copy in order to be presented with a window that will allow you to
+4. A new URL will be provided for you in a pop-up. Highlight and copy or click
+   on Copy in order to be presented with a window that will allow you to
    copy the URL to your clipboard. Anyone who you share this link with will be
    able to download the file. You can test the link in a new web browser window.
 
-    |data_links_window|
-
-6. Deactivate a data link by selecting the file; from the *Share* menu click via
-   Public Link. Clicking the |delete_icon| delete icon, next to the links you
-   wish to inactivate. Once you deactivate the link, anyone with whom you shared
-   it with will no longer be able to access that data.
+   |public link|
 
   .. Tip::
-    You can quickly create a link to a file by clicking the |link_icon| link icon
-    next to file you wish to share. Manage these links using the "Manage Data
-    Links" console which is accessible from the *Share* menu as described above.
+    You can quickly create a link to a file by clicking the "3 dots" icon next \
+    to any file and selecting "Public Link".
+
+*To deactivate a public link*
+
+1. To deactivate a link, select (checkbox) one or more individual file that has
+   been shared with a public link; then click on the *Details* menu.
+
+2. In the details menu under the *Permissions* tab, click the "pencil" icon
+   next to "cyverse-anonymous@cyverse.org" to edit the permission.
 
 ----
 
-*Share a File/folder in Discovery Enviornment with Another CyVerse User*
+*Share a File/folder in Discovery Environment with Another CyVerse User*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Share data with another CyVerse user by granting permission to read, write, or
 own files/folders
 
-1. If necessary, login to the |discovery_enviornment|.
+1. If necessary, login to the |Discovery Environment|.
 
 2. In the Data window, select (checkbox) file(s), folder(s) you wish to share
-   with another user;
-   then under the *Share* menus select *Share with Collaborators...*
-3. In the “Manage Sharing” menu, under ‘Selected File(s)/Folder(s) the name of
-   the files and folders you are currently sharing are displayed. Ensure the
-   file you wish to share now is selected.
+   with another user; then under the *Share* menus enter the CyVerse username, email, or group name you wish to share with.
+3. Next, under ‘Permissions’ choose what permission you want to grant the
+   recipient(s) you are sharing this file with.
 
-    |manage_sharing|
+   |sharing|
 
-4. In the ‘search for users’ field search for the CyVerse user you wish to share
-   with by search for their name, or CyVerse username. You may also select
-   ‘Choose from Collaborators’ which will bring up a list of people you have
-   designated as collaborators.
-5. Next, under ‘Permissions’ choose what permission you want to grant the person
-   you are sharing this file with.
-6. Once you are finished, click Done to begin sharing. The user will be notified
+4. Once you are finished, click Done to begin sharing. The user will be notified
    that a file has been shared with them.
+
+   .. tip::
+
+      You can share several files/folders at once by selecting them and then clicking the "Add to Bag" button in the Data window.
 
    .. hint::
       By managing access to data, the DE allows you to share large datasets
@@ -120,45 +119,18 @@ own files/folders
             - **X**
             - **X**
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
-
 ----
 
-*Summary*
-~~~~~~~~~
 
-This guide has introduced the basic data management tools you need to manage
-the lifecycle of Data in CyVerse. There are many more features to explore and
-these are detailed in the full `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Using+the+Data+Store>`_.
+**Fix or improve this documentation**
 
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
-
-----
-
-**Fix or improve this documentation:**
-
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/data_store_guide_>`_
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
+- Send feedback: `learning@CyVerse.org <learning@CyVerse.org>`_
 
 ----
 
@@ -173,7 +145,6 @@ Post your question to the user forum:
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
 .. |data_window| image:: ./img/de/data_window.png
     :width: 550
     :height: 300
