@@ -28,40 +28,92 @@ section will cover the basics of installation and use; see also the official
 *iCommands Installation for Linux*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. On a linux OS you can use the package managers from iRODS to install in
-     the terminal:
+On a linux OS you can use a package manager to install iCommands in the terminal. 
 
 **CentOS:**
 
+Instructions for configuring the iRODS repository can be be found on the 
+`iRODS Packages <https://packages.irods.org/>`_ webpage. After configurating the repository, ``yum`` 
+can be used to install the iCommands package ``irods-icommands``.
+
 .. code:: bash
 
+  sudo rpm --import https://packages.irods.org/irods-signing-key.asc
+  wget -qO - https://packages.irods.org/renci-irods.yum.repo \
+    | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
   sudo yum install irods-icommands
-  # if that does not work try
-  # yum install https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
 
+If that does not work, an older version of iCommands, 4.1.12, can be installed from RENCI's website.
 
-**Debian/Ubuntu:**
+.. code:: base
+
+  sudo yum install \
+    https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
+
+**Ubuntu 18.04:**
+
+Instructions for configuring the iRODS repository can be be found on the 
+`iRODS Packages <https://packages.irods.org/>`_ webpage. After configurating the repository, ``apt``
+can be used to install the iCommands package ``irods-icommands``.
 
 .. code:: bash
 
-  sudo apt update
+  wget -qO - https://packages.irods.org/irods-signing-key.asc \
+    | sudo apt-key add -
+  echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" \
+    | sudo tee /etc/apt/sources.list.d/renci-irods.list
+  sudo apt-get update
   sudo apt install irods-icommands
 
-If the above does not work for you (e.g., no support for Ubuntu 20), try
+**Ubuntu 20.04:**
+
+iRODS doesn't current support Ubuntu 20.04 yet. However, the one for Ubuntu 18.04 works as long as a 
+few extra packages are installed.
+
+Here are the commands to configure the iRODS repository.
+
+.. code:: bash
+
+  wget -qO - https://packages.irods.org/irods-signing-key.asc \
+    | sudo apt-key add -
+  echo "deb [arch=amd64] https://packages.irods.org/apt/ bionic main" \
+    | sudo tee /etc/apt/sources.list.d/renci-irods.list
+  sudo apt update
+
+Prior to installing the iCommands package, a few 18.04 packages neet to be installed that are not 
+available for 20.04. Here are the comands to install these packages.
+
+.. code:: bash
+
+  wget --directory-prefix /tmp/ \
+    http://security.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.22-1ubuntu0.18.04.2_all.deb \
+    http://security.ubuntu.com/ubuntu/pool/main/r/requests/python-requests_2.18.4-2ubuntu0.1_all.deb \
+    http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb
+  sudo apt install \
+    /tmp/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb \
+    /tmp/python-urllib3_1.22-1ubuntu0.18.04.2_all.deb \
+    /tmp/python-requests_2.18.4-2ubuntu0.1_all.deb
+
+Now ``apt`` can be used to install the iCommands package ``irods-icommands``.
+
+.. code:: bash
+
+  sudo apt install irods-icommands
+
+If the above does not work, e.g., incomplete support for Ubuntu 20,04, an older version of 
+iCommands, 4.1.10, can be installed by doing the following.
 
 .. code:: bash
 
   sudo apt update
-
   wget \
-  http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-  http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-  https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
-
+    http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+    http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+    https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
   sudo dpkg --install \
-  multiarch-support_2.27-3ubuntu1.4_amd64.deb \
-  libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
-  irods-icommands-4.1.10-ubuntu14-x86_64.deb
+    multiarch-support_2.27-3ubuntu1.4_amd64.deb \
+    libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
+    irods-icommands-4.1.10-ubuntu14-x86_64.deb
 
 **Arm64/Aarch64:**
 
