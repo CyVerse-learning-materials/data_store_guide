@@ -14,7 +14,12 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 
 # Navigation Page
 nav:
-  - Home: index.md 
+  - Home: index.md
+  - Drag-and-drop Data Transfer with Cyberduck: step1.md
+  - Command Line Transfer with iCommands: step2.md
+  - Associate Data with Metadata: step3.md
+  - Data Sharing and Other Features: step4.md
+  - WebDAV: step5.md
 
 # JavaScript for Intercom Widget
 extra_javascript:
