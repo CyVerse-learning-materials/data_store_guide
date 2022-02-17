@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/data_store_guide/step2/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Command Line Transfer with iCommands - Changing Your CyVerse Password</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Command Line Transfer with iCommands";
+    var mkdocs_page_input_path = "step2.md";
+    var mkdocs_page_url = "/data_store_guide/step2/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Changing Your CyVerse Password</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">Drag-and-drop Data Transfer with Cyberduck</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Command Line Transfer with iCommands</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#icommands-installation-for-linux">iCommands Installation for Linux</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#icommands-installation-for-mac-os-x">iCommands Installation for Mac OS X</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#icommands-first-time-configuration">iCommands First-time Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#anonymous-access-to-the-cyverse-datastore">Anonymous access to the CyVerse Datastore</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#upload-filesfolders-from-local-computer-to-data-store">Upload Files/folders from local Computer to Data Store</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#download-filesfolders-from-data-store-to-local-computer">Download Files/folders from Data Store to local Computer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#netcdf-icommands">NetCDF iCommands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-">-</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-frequently-used-icommands">Additional Frequently Used iCommands</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Associate Data with Metadata</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Data Sharing and Other Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">WebDAV</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Changing Your CyVerse Password</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Command Line Transfer with iCommands</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/data_store_guide/edit/mkdocs/docs/step2.md"> Edit on CyVerse-learning-materials/data_store_guide</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="command-line-transfer-with-icommands">Command Line Transfer with iCommands<a class="headerlink" href="#command-line-transfer-with-icommands" title="Permanent link">&para;</a></h1>
+<p>iCommands is a collection of tools developed by the project. iRODS is
+the technology that supports the CyVerse Data Store. Using iCommands is
+the most flexible way to interact with the Data Store. This section will
+cover the basics of installation and use; see also the official .</p>
+<p><strong>Some things to remember about iCommands</strong></p>
+<ul>
+<li>This is a <em>command line</em> tool, operated in a terminal.</li>
+<li>There is poor support for <em>Windows OS</em>: Currently, we have not
+    tested a Windows-only shell version of iCommands. We do suggest
+    installing and following the Linux installation instructions.</li>
+</ul>
+<hr />
+<h2 id="icommands-installation-for-linux"><em>iCommands Installation for Linux</em><a class="headerlink" href="#icommands-installation-for-linux" title="Permanent link">&para;</a></h2>
+<p>On a linux OS you can use a package manager to install iCommands in the
+terminal.</p>
+<p><strong>CentOS:</strong></p>
+<p>Instructions for configuring the iRODS repository can be be found on the
+<a href="https://packages.irods.org/">iRODS Packages</a> webpage. After
+configurating the repository, <code>yum</code> can be used to install the iCommands
+package <code>irods-icommands</code>.</p>
+<div class="highlight"><pre><span></span><code>sudo rpm --import https://packages.irods.org/irods-signing-key.asc
+wget -qO - https://packages.irods.org/renci-irods.yum.repo <span class="se">\</span>
+  <span class="p">|</span> sudo tee /etc/yum.repos.d/renci-irods.yum.repo
+sudo yum install irods-icommands
+</code></pre></div>
+<p>If that does not work, an older version of iCommands, 4.1.12, can be
+installed from RENCI\'s website.</p>
+<div class="highlight"><pre><span></span><code>sudo yum install \
+  https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
+</code></pre></div>
+<p><strong>Ubuntu 18.04:</strong></p>
+<p>Instructions for configuring the iRODS repository can be be found on the
+<a href="https://packages.irods.org/">iRODS Packages</a> webpage. After
+configurating the repository, <code>apt</code> can be used to install the iCommands
+package <code>irods-icommands</code>.</p>
+<div class="highlight"><pre><span></span><code>wget -qO - https://packages.irods.org/irods-signing-key.asc <span class="se">\</span>
+  <span class="p">|</span> sudo apt-key add -
+<span class="nb">echo</span> <span class="s2">&quot;deb [arch=amd64] https://packages.irods.org/apt/ </span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2"> main&quot;</span> <span class="se">\</span>
+  <span class="p">|</span> sudo tee /etc/apt/sources.list.d/renci-irods.list
+sudo apt-get update
+sudo apt install irods-icommands
+</code></pre></div>
+<p><strong>Ubuntu 20.04:</strong></p>
+<p>iRODS doesn\'t current support Ubuntu 20.04 yet. However, the one for
+Ubuntu 18.04 works as long as a few extra packages are installed.</p>
+<p>Here are the commands to configure the iRODS repository.</p>
+<div class="highlight"><pre><span></span><code>wget -qO - https://packages.irods.org/irods-signing-key.asc <span class="se">\</span>
+  <span class="p">|</span> sudo apt-key add -
+<span class="nb">echo</span> <span class="s2">&quot;deb [arch=amd64] https://packages.irods.org/apt/ bionic main&quot;</span> <span class="se">\</span>
+  <span class="p">|</span> sudo tee /etc/apt/sources.list.d/renci-irods.list
+sudo apt update
+</code></pre></div>
+<p>Prior to installing the iCommands package, a few 18.04 packages neet to
+be installed that are not available for 20.04. Here are the comands to
+install these packages.</p>
+<div class="highlight"><pre><span></span><code>wget --directory-prefix /tmp/ <span class="se">\</span>
+  http://security.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.22-1ubuntu0.18.04.2_all.deb <span class="se">\</span>
+  http://security.ubuntu.com/ubuntu/pool/main/r/requests/python-requests_2.18.4-2ubuntu0.1_all.deb <span class="se">\</span>
+  http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb
+sudo apt install <span class="se">\</span>
+  /tmp/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb <span class="se">\</span>
+  /tmp/python-urllib3_1.22-1ubuntu0.18.04.2_all.deb <span class="se">\</span>
+  /tmp/python-requests_2.18.4-2ubuntu0.1_all.deb
+</code></pre></div>
+<p>Now <code>apt</code> can be used to install the iCommands package
+<code>irods-icommands</code>.</p>
+<div class="highlight"><pre><span></span><code>sudo apt install irods-icommands
+</code></pre></div>
+<p>If the above does not work, e.g., incomplete support for Ubuntu 20,04,
+an older version of iCommands, 4.1.10, can be installed by doing the
+following.</p>
+<div class="highlight"><pre><span></span><code>sudo apt update
+wget <span class="se">\</span>
+  http://mirrors.kernel.org/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb <span class="se">\</span>
+  http://ftp.se.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb <span class="se">\</span>
+  https://files.renci.org/pub/irods/releases/4.1.10/ubuntu14/irods-icommands-4.1.10-ubuntu14-x86_64.deb
+sudo dpkg --install <span class="se">\</span>
+  multiarch-support_2.27-3ubuntu1.4_amd64.deb <span class="se">\</span>
+  libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb <span class="se">\</span>
+  irods-icommands-4.1.10-ubuntu14-x86_64.deb
+</code></pre></div>
+<p><strong>Arm64/Aarch64:</strong></p>
+<p>A CyVerse community user compiled i-commands for Raspberry Pi (and
+tested in NVIDIA Jetsons):
+<a href="https://github.com/jmscslgroup/libpanda/blob/master/scripts/irods-icommands-debs.tgz">https://github.com/jmscslgroup/libpanda/blob/master/scripts/irods-icommands-debs.tgz</a></p>
+<div class="highlight"><pre><span></span><code>wget https://github.com/jmscslgroup/libpanda/raw/master/scripts/irods-icommands-debs.tgz
+tar zxvf irods-icommands-debs.tgz
+<span class="nb">cd</span> irods-icommands-debs/
+./install.sh
+</code></pre></div>
+<hr />
+<h2 id="icommands-installation-for-mac-os-x"><strong>iCommands Installation for Mac OS X</strong><a class="headerlink" href="#icommands-installation-for-mac-os-x" title="Permanent link">&para;</a></h2>
+<p>iRODS doesn\'t currently support Mac OS X, but CyVerse has built an
+installer for it.</p>
+<blockquote>
+<ol>
+<li>Download the CyVerse-specific .</li>
+<li>Open the file by locating it in your Finder; right-click to run
+    the installer. You may get a security warning noting the file is
+    from an \"unidentified developer.\" You may bypass this warning by
+    going to \'System Preferences\', selecting the \'Security &amp;
+    Privacy\' menu, and clicking the \'Open Anyway\' button to
+    proceed.</li>
+<li>Follow the prompts to begin the installation. You will need to
+    know your administrator password to install new software.</li>
+</ol>
+</blockquote>
+<p>::: note
+::: title
+Note
+:::</p>
+<p>Newer Mac OS X now ships with <code>zsh</code> as its default shell rather than
+<code>bash</code>. The installer will attempt to write some environmental variables
+to the <code>.bashrc</code> file which for <code>zsh</code> is called the
+[.zshrc]{.title-ref}.</p>
+<p>By default, this installation will place iCommands in your system <code>PATH</code>
+so you should be ready to run iCommands immediately at the terminal. If
+this does not happen (i.e. you get an error when trying to run <code>iinit</code>),
+you can add the [icommands]{.title-ref} path by editing your <code>.zshrc</code>
+file:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># add iCommands Path</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/Applications/icommands/:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+<span class="nb">export</span> <span class="nv">IRODS_PLUGINS_HOME</span><span class="o">=</span>/Applications/icommands/plugins/
+</code></pre></div>
+<p>and then in terminal source the file <code>source ~/.zshrc</code>.
+:::</p>
+<hr />
+<h2 id="icommands-first-time-configuration"><em>iCommands First-time Configuration</em><a class="headerlink" href="#icommands-first-time-configuration" title="Permanent link">&para;</a></h2>
+<p>::: note
+::: title
+Note
+:::</p>
+<p>If using iCommands in an HPC environment, which already has iCommands
+installed, run the <code>module load irods</code> command to get access to iRODS
+iCommands.
+:::</p>
+<p>Once iCommands is installed and in the system [PATH]{.title-ref} these
+instructions apply at a terminal in Mac OS X and Linux systems.</p>
+<blockquote>
+<ol>
+<li>
+<p>Open terminal</p>
+</li>
+<li>
+<p>Type [iinit]{.title-ref} command to start the configuration
+    process. When prompted, enter the values shown below as comments
+    in the example code block.</p>
+<p>CyVerse Data Store configuration:</p>
+</li>
+</ol>
+</blockquote>
+<p>CyVerse Data Store configuration:</p>
+<hr />
+<p>host name                        port #              username         zone                   password
+  [data.cyverse.org]{.title-ref}   [1247]{.title-ref}   CyVerse UserID   [iplant]{.title-ref}   CyVerse Password</p>
+<hr />
+<p>::: note
+::: title
+Note
+:::</p>
+<p>You can reconfigure iCommands for other iRODS data stores by changing
+your environment file</p>
+<ol>
+<li>
+<p>Verify that your iCommands installation works and is properly
+    configured using the <code>ils</code> command to list the contents of your Data
+    Store home directory.</p>
+<blockquote>
+<p><div class="highlight"><pre><span></span><code>$ ils
+  /iplant/home/your_home_directory:
+file1
+file2
+file3
+C- /iplant/home/your_home_directory/analyses
+C- /iplant/home/your_home_directory/another_folder
+</code></pre></div>
+:::</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h2 id="anonymous-access-to-the-cyverse-datastore"><em>Anonymous access to the CyVerse Datastore</em><a class="headerlink" href="#anonymous-access-to-the-cyverse-datastore" title="Permanent link">&para;</a></h2>
+<p>You can access public data in the CyVerse Datastore with iCommands
+using:</p>
+<blockquote>
+<ul>
+<li>Username: anonymous</li>
+<li>Password: \<leave blank></li>
+</ul>
+</blockquote>
+<h2 id="upload-filesfolders-from-local-computer-to-data-store"><em>Upload Files/folders from local Computer to Data Store</em><a class="headerlink" href="#upload-filesfolders-from-local-computer-to-data-store" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>::: warning
+::: title
+Warning
+:::</p>
+<p>When uploading your data to the Data Store you should not upload
+files/ folders with names containing spaces (e.g. experiment
+one.fastq) or name that contain special characters (e.g. ~ `` ! @
+# $ % ^ &amp; * ( ) + = { } [ ] | : ; \"\" \'\' \&lt; > , ? /). The
+Apps on the Discovery Environment and most command line applications
+will typically not tolerate these characters. For long file/folder
+names the use of underscores (e.g. experiment_one.fastq) is the
+recommended practice.
+:::</p>
+</blockquote>
+<p>See the for more information.</p>
+<blockquote>
+<ol>
+<li>Upload a directory using the [iput]{.title-ref} command. Remember,
+    the -r flag is to recursively upload a directory, so if you are
+    uploading a single file, omit the -r flag.</li>
+</ol>
+<blockquote>
+<div class="highlight"><pre><span></span><code>$ iput -rPT /local_directory /iplant/home/cyverse_username/destination_folder
+  <span class="c1"># This command will output the progress as it uploads your local directory</span>
+
+
+There are several optional arguments that the upload iCommand <span class="sb">`</span>iput<span class="sb">`</span> can
+take:
+
+.. code:: bash
+
+  $ iput -r <span class="c1"># For recursive transfer of directories and their contents</span>
+
+  $ iput -P <span class="c1"># display the progress of the upload</span>
+
+  $ iput -f <span class="c1"># force the upload and overwrite</span>
+
+  $ iput -T <span class="c1"># Renew socket connection after 10 min (May help connections</span>
+            <span class="c1"># that are failing due to some connection/firewall settings)</span>
+</code></pre></div>
+</blockquote>
+</blockquote>
+<hr />
+<h2 id="download-filesfolders-from-data-store-to-local-computer"><em>Download Files/folders from Data Store to local Computer</em><a class="headerlink" href="#download-filesfolders-from-data-store-to-local-computer" title="Permanent link">&para;</a></h2>
+<p>See the for more information.</p>
+<blockquote>
+<ol>
+<li>Download a file using the [iget]{.title-ref} command. Remember,
+    the -r flag is to recursively upload a directory, so if you are
+    uploading a single file, omit the -r flag.</li>
+</ol>
+<blockquote>
+<div class="highlight"><pre><span></span><code>$ iget -PT /iplant/home/cyverse_username/target_file /local_destination
+  <span class="c1"># This command will output the progress as it downloads to your local machine</span>
+</code></pre></div>
+</blockquote>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>There are several optional arguments that the upload iCommand
+[iget]{.title-ref} can take:</p>
+<blockquote>
+<p><div class="highlight"><pre><span></span><code>$ iget -r <span class="c1"># For recursive transfer of directories and their contents</span>
+
+$ iget -P <span class="c1"># display the progress of the upload</span>
+
+$ iget -f <span class="c1"># force the upload and overwrite</span>
+
+$ iget -T <span class="c1"># Renew socket connection after 10 min (May help connections</span>
+          <span class="c1"># that are failing due to some connection/firewall settings)</span>
+</code></pre></div>
+:::</p>
+</blockquote>
+</blockquote>
+<hr />
+<h2 id="netcdf-icommands"><em>NetCDF iCommands</em><a class="headerlink" href="#netcdf-icommands" title="Permanent link">&para;</a></h2>
+<p>For the Linux distributions there are three extra iCommands that support
+common NetCDF operations:</p>
+<blockquote>
+<ul>
+<li><code>inc</code> performs data operations on a list of NetCDF files,</li>
+<li><code>incarch</code> archives a open ended time series data,</li>
+<li><code>incattr</code> performs operation on attributes of NetCDF files.</li>
+</ul>
+</blockquote>
+<p>Each of these commands accepts the <code>-h</code> command line option. When a
+command is called with this option, it displays the command\'s help
+documentation. Please see this help documentation for more information.</p>
+<blockquote>
+<p><strong>Installation</strong></p>
+<ol>
+<li>
+<p>Install iRODS Runtime. Before the NetCDF iCommands can be
+    installed, the current version of the iRODS run-time library needs
+    to be installed. Please install the appropriate version (e.g.
+    <code>irods-runtime-X-X-XX</code>). The distribution specific packages can be
+    found on .</p>
+</li>
+<li>
+<p>Install NetCDF API. Once the run-time library is installed, the
+    iRODS NetCDF API library needs to be installed. Please use the
+    appropriate link to the download the installation package and
+    install it. The package installer will likely warn that irods user
+    and/or group don\'t exist, and that it will be using root instead.
+    These warnings are harmless, since the package contents should be
+    installed with root ownership.</p>
+<blockquote>
+<h2 id="-">-<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<hr />
+<h2 id="additional-frequently-used-icommands"><em>Additional Frequently Used iCommands</em><a class="headerlink" href="#additional-frequently-used-icommands" title="Permanent link">&para;</a></h2>
+<p>In addition to the commands above, there are several frequently used
+iCommands - most of which you would expect following the Linux paradigm:</p>
+<ul>
+<li><strong>ipwd</strong>: Print current directory</li>
+<li><strong>imkdir</strong>: Create a directory</li>
+<li><strong>icd</strong>: Change directory</li>
+<li><strong>irsync</strong>: Sync local directory with iRODS directory</li>
+</ul>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/data_store_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+<blockquote>
+<p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step3/" class="btn btn-neutral float-right" title="Associate Data with Metadata">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../step1/" class="btn btn-neutral" title="Drag-and-drop Data Transfer with Cyberduck"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step3/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

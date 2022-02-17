@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/data_store_guide/step3/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Associate Data with Metadata - Changing Your CyVerse Password</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Associate Data with Metadata";
+    var mkdocs_page_input_path = "step3.md";
+    var mkdocs_page_url = "/data_store_guide/step3/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Changing Your CyVerse Password</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">Drag-and-drop Data Transfer with Cyberduck</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Command Line Transfer with iCommands</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Associate Data with Metadata</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#viewing-and-editing-metadata-for-a-single-filefolder-in-the-discovery-environment">Viewing and Editing Metadata for a Single File/folder in the Discovery Environment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-metadata-to-multiple-filesfolder-in-the-discovery-environment">Adding Metadata to Multiple Files/folder in the Discovery Environment</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Data Sharing and Other Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">WebDAV</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Changing Your CyVerse Password</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Associate Data with Metadata</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/data_store_guide/edit/mkdocs/docs/step3.md"> Edit on CyVerse-learning-materials/data_store_guide</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="associate-data-with-metadata">Associate Data with Metadata<a class="headerlink" href="#associate-data-with-metadata" title="Permanent link">&para;</a></h1>
+<p>The Data Store supports a variety of solutions that allow you to
+associate your raw data with metadata. Metadata is of critical
+importance to a quality research (see this article on ), yet it is often
+given less consideration until the time of publication and sharing. Here
+are a few metadata features that you can adopt and be aware of at the
+outset, see more of CyVerse\'s capabilities on the page.</p>
+<p><strong>Some things to remember about the platform</strong></p>
+<ul>
+<li>You can add metadata to a single file/folder, or in bulk to large
+    collections of data. You can use your own metadata schema, or apply
+    one of our metadata templates.</li>
+<li>The Discovery Environment supports several metadata templates that
+    can be used for submission of metadata. Additional templates you may
+    wish to use can be found at resources like .</li>
+<li>Metadata can be managed through a graphical interface in the
+    Discovery Environment or using iCommands at the command line. We
+    will only cover the Discovery Environment in this guide. See
+    instructions for on the CyVerse wiki.</li>
+</ul>
+<hr />
+<h2 id="viewing-and-editing-metadata-for-a-single-filefolder-in-the-discovery-environment"><em>Viewing and Editing Metadata for a Single File/folder in the Discovery Environment</em><a class="headerlink" href="#viewing-and-editing-metadata-for-a-single-filefolder-in-the-discovery-environment" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>::: note
+::: title
+Note
+:::</p>
+<p>You must have [write]{.title-ref} or [own]{.title-ref} permission to
+edit an object\'s metadata.
+:::</p>
+<ol>
+<li>Log into the .</li>
+</ol>
+<dl>
+<dt>2. Click on the (Data Icon) to view to browse for data. Select</dt>
+<dd>
+<p>(checkbox) a single file/folder to add metadata to.</p>
+</dd>
+<dt>3. Under the <strong>More Actions</strong> menu, click on the <strong>`Metadata`</strong> choice.</dt>
+<dd>
+<p>You will see existing metadata for the file/folder in the
+Attribute, Value, Unit (AVU) format.</p>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>A single piece of metadata, or an AVU, is made up of attributes,
+values, and units. An attribute is a changeable property or
+characteristic of the file or folder you have selected that can be
+set to a value. For example, \"time point\" might be an attribute
+of a file, while \'7\' could be its value, and hour a unit of
+time.
+:::</p>
+</dd>
+</dl>
+</blockquote>
+<p><em>Adding metadata</em></p>
+<ol>
+<li>Click the \"+ Add Metadata\" button to add a new entry. Then follow
+    the directions for editing metadata below.</li>
+</ol>
+<p><em>Editing or deleting metadata</em></p>
+<ol>
+<li>You may use the \"pencil\" icon to edit an existing entry or the
+    \"trash can\" icon to delete an entry.</li>
+<li>After you have made any edits or deletion, click \'Save\' (on the
+    top right of the screen) to save all entries and apply the metadata.</li>
+</ol>
+<h2 id="adding-metadata-to-multiple-filesfolder-in-the-discovery-environment"><em>Adding Metadata to Multiple Files/folder in the Discovery Environment</em><a class="headerlink" href="#adding-metadata-to-multiple-filesfolder-in-the-discovery-environment" title="Permanent link">&para;</a></h2>
+<p><strong>Adding Metadata using a CyVerse Template</strong></p>
+<ol>
+<li>
+<p>Log into the .</p>
+</li>
+<li>
+<p>Click on the (Data Icon) to open a Data window. Select (checkbox) a
+    single file/folder to add metadata to. Next,</p>
+</li>
+<li>
+<p>Under the <strong>More Actions</strong> menu, click on the <strong>Metadata</strong>. Click on
+    the subsequent <strong>More Actions</strong> menu and select <strong>View in
+    Template</strong>. You have two choices in using the template:</p>
+<blockquote>
+<p>A)  Choose a template and clicking <strong>Select</strong> will allow you to
+    apply the template and edit the metadata manually in the DE
+    interface.
+B)  Clicking the (Download icon) will download a .csv file you can
+    edit and upload (See applying Bulk metadata below).</p>
+</blockquote>
+<p>click [OK]{.title-ref} to download. (In this example, we will use
+the [DOI Request - DataCite Metadata]{.title-ref}) template.</p>
+</li>
+</ol>
+<p><em>Editing metadata template in DE</em></p>
+<ol>
+<li>Follow the steps in the \"Editing or deleting metadata\" from the
+    previous section above</li>
+</ol>
+<p><em>Editing a downloaded metadata template</em></p>
+<ol>
+<li>
+<p>Unzip the downloaded template; it will contain two files
+    [blank.csv]{.title-ref} and [guide.csv]{.title-ref}. Open these
+    files using the spreadsheet editor of your choice.</p>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<ul>
+<li>[blank.csv]{.title-ref} is the metadata template that you will
+    complete for your data.</li>
+<li>[gude.csv]{.title-ref} contains instructions for your template,
+    and will usually include controlled vocabulary terms for
+    metadata descriptors.
+:::</li>
+</ul>
+</li>
+<li>
+<p>Edit the template in one of two ways:</p>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>
+<p><em>If all data will be in a single folder</em>
+    a.  In the [blank.csv]{.title-ref} spreadsheet, in the <em>\'file
+        name or path\'</em> column, enter the file names of all the
+        files/folder in that folder you wish to annotate with
+        metadata.</p>
+<div class="highlight"><pre><span></span><code>::: tip
+::: title
+Tip
+:::
+
+**Finding the file path in the DE**
+
+In any data window click the (kebab menu or 3-dots menu) next
+to any file or folder; choose **copy path** to get the path to
+that item in the Data Store.
+:::
+</code></pre></div>
+<p>b.  In the remaining columns of the template, enter the values for
+    each file/attribute combination that apply.</p>
+<p>c.  If desired, add additional columns to the end of the template.
+    The metadata in the additional columns will be saved in the
+    Data Store but will not be stored as part of the template.</p>
+<p>d.  Save the file in <strong>CSV format</strong>. Make sure none of the names
+    of the files or the parent folder includes spaces or special
+    characters. You may name this metadata file anything you wish,
+    but keep it in CSV format.
+-   <em>If data will be in multiple folders</em>
+a.  In the [blank.csv]{.title-ref} spreadsheet, in the <em>\'file
+    name or path\'</em> column, enter the full path of the top-level
+    folder (e.g.
+    [/iplant/home/YOURUSERNAME/FOLDERNAME]{.title-ref})
+b.  In the remaining columns in the first row, enter the values
+    for each file/attribute combinations
+c.  Repeat for each file, but make sure to add the full file path
+    (e.g. [/ iplant/home/YOURUSERNAME/FOLDERNAME]{.title-ref}) for
+    each file.
+d.  If desired, add additional columns to the end of the template.
+    The metadata in the columns will be saved in the Data Store
+    but will not be stored as part of the template.
+e.  Save the file in <strong>CSV format</strong>. Make sure none of the names
+    of the files or the parent folder includes spaces or special
+    characters. You may name this metadata file anything you wish,
+    but keep it in CSV format.</p>
+</li>
+</ul>
+</blockquote>
+<ol>
+<li>
+<p>In an open \'Data\' window in the Discovery Environment, navigate to
+    appropriate location for uploading the template:</p>
+<ul>
+<li>
+<p>If the first column of your metadata file contains only file
+    names (that is, all data files are in the same folder), navigate
+    to the folder and use the <strong>Upload</strong> button (Browse local) or
+    your choice of upload tool to upload the metadata (csv file) to
+    that folder.</p>
+</li>
+<li>
+<p>If the first column of your metadata file contains the full path
+    to each file (that is, the data files are in different folders),
+    it does not matter where the metadata file is located on the
+    Data Store. Use he <strong>Upload</strong> button (Browse local) or your
+    choice of upload tool to upload the metadata (csv file) to an
+    appropriate location on the Data Store.</p>
+<blockquote>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>If you commit to using absolute file paths (e.g.
+[/iplant/home/your_file_location]{.title-ref}) you can keep
+all of your metadata spreadsheets in one location on the Data
+Store for convenient management and editing.
+:::
+4.  To apply the metadata, in the Data window, select (checkbox) the
+    name of the <strong>folder</strong> containing the data files to which you want
+    to apply the metadata in bulk.
+5.  Click the <strong>More Actions</strong> menu select \'Apply Bulk Metadata\';
+    brows to the uploaded metadata spreadsheet and select it.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<p>Your metadata should now be applied to your files. You should receive a
+notification in the Discovery Environment and you can confirm the
+metadata has been correctly applied by following the steps in the
+preceding section to view metadata.</p>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/data_store_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+<blockquote>
+<p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step4/" class="btn btn-neutral float-right" title="Data Sharing and Other Features">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../step2/" class="btn btn-neutral" title="Command Line Transfer with iCommands"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step4/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

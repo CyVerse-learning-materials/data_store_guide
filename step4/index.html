@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/data_store_guide/step4/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Data Sharing and Other Features - Changing Your CyVerse Password</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data Sharing and Other Features";
+    var mkdocs_page_input_path = "step4.md";
+    var mkdocs_page_url = "/data_store_guide/step4/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Changing Your CyVerse Password</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">Drag-and-drop Data Transfer with Cyberduck</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Command Line Transfer with iCommands</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Associate Data with Metadata</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Data Sharing and Other Features</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#share-a-file-in-discovery-environment-with-a-url-public-link">Share a File in Discovery Environment with a URL (Public Link)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#share-a-filefolder-in-discovery-environment-with-another-cyverse-user">Share a File/folder in Discovery Environment with Another CyVerse User</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">WebDAV</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Changing Your CyVerse Password</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Data Sharing and Other Features</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/data_store_guide/edit/mkdocs/docs/step4.md"> Edit on CyVerse-learning-materials/data_store_guide</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="data-sharing-and-other-features">Data Sharing and Other Features<a class="headerlink" href="#data-sharing-and-other-features" title="Permanent link">&para;</a></h1>
+<p>One of the most powerful features of the Data Store is to share all of
+your data instantly, and with fine-grained permission control. You can
+share your data with other CyVerse users, and you can also make data
+available to anonymous users and with identifiers (e.g. DOIs, ARKs)
+through the CyVerse <a href="https://wiki.cyverse.org/wiki/display/DC/Data+Commons+Home">Data
+Commons</a>. We
+will cover the most basic, commonly used sharing features in this guide.</p>
+<hr />
+<h2 id="share-a-file-in-discovery-environment-with-a-url-public-link"><em>Share a File in Discovery Environment with a URL (Public Link)</em><a class="headerlink" href="#share-a-file-in-discovery-environment-with-a-url-public-link" title="Permanent link">&para;</a></h2>
+<p>You can quickly share files in your Data Store using a Discovery
+Environment Public Link.</p>
+<p>::: note
+::: title
+Note
+:::</p>
+<p>You can <strong>only share individual files</strong> using the quick link. Since
+files are shared over HTTP this is only recommended for small files.
+This is a convenient , but less secure method for file transfer. Do not
+share sensitive/private data using these links.
+:::</p>
+<ol>
+<li>
+<p>If necessary, login to the .</p>
+</li>
+<li>
+<p>In the Data window, select (checkbox) one or more individual file(s)
+    (not folders) you wish to share.</p>
+</li>
+<li>
+<p>From the <em>More actions</em> menu, select <em>Public Link(s)</em>.</p>
+</li>
+<li>
+<p>A new URL will be provided for you in a pop-up. Highlight and copy
+    or click on Copy in order to be presented with a window that will
+    allow you to copy the URL to your clipboard. Anyone who you share
+    this link with will be able to download the file. You can test the
+    link in a new web browser window.</p>
+</li>
+</ol>
+<blockquote>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>You can quickly create a link to a file by clicking the \"3 dots\"
+icon next to any file and selecting \"Public Link\".
+:::</p>
+</blockquote>
+<p><em>To deactivate a public link</em></p>
+<ol>
+<li>To deactivate a link, select (checkbox) one or more individual file
+    that has been shared with a public link; then click on the <em>Details</em>
+    menu.</li>
+<li>In the details menu under the <em>Permissions</em> tab, click the
+    \"pencil\" icon next to \"<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#45;&#97;&#110;&#111;&#110;&#121;&#109;&#111;&#117;&#115;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#45;&#97;&#110;&#111;&#110;&#121;&#109;&#111;&#117;&#115;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a>\" to edit
+    the permission.</li>
+</ol>
+<hr />
+<h2 id="share-a-filefolder-in-discovery-environment-with-another-cyverse-user"><em>Share a File/folder in Discovery Environment with Another CyVerse User</em><a class="headerlink" href="#share-a-filefolder-in-discovery-environment-with-another-cyverse-user" title="Permanent link">&para;</a></h2>
+<p>Share data with another CyVerse user by granting permission to read,
+write, or own files/folders</p>
+<ol>
+<li>
+<p>If necessary, login to the .</p>
+</li>
+<li>
+<p>In the Data window, select (checkbox) file(s), folder(s) you wish to
+    share with another user; then under the <em>Share</em> menus enter the
+    CyVerse username, email, or group name you wish to share with.</p>
+</li>
+<li>
+<p>Next, under 'Permissions' choose what permission you want to grant
+    the recipient(s) you are sharing this file with.</p>
+</li>
+<li>
+<p>Once you are finished, click Done to begin sharing. The user will be
+    notified that a file has been shared with them.</p>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>You can share several files/folders at once by selecting them and
+then clicking the \"Add to Bag\" button in the Data window.
+:::</p>
+<p>::: hint
+::: title
+Hint
+:::</p>
+<p>By managing access to data, the DE allows you to share large
+datasets instantaneously. Data permissions (based on UNIX
+permissions) are described in this chart:</p>
+<p>Permission level   Read    Download/Save   Metadata       Rename   Move    Delete</p>
+<hr />
+<p>Read               <strong>X</strong>   <strong>X</strong>           <strong>View</strong>                      <br />
+  Write              <strong>X</strong>   <strong>X</strong>           <strong>Add/Edit</strong>                  <br />
+  Own                <strong>X</strong>   <strong>X</strong>           <strong>Add/Edit</strong>   <strong>X</strong>    <strong>X</strong>   <strong>X</strong>
+:::</p>
+</li>
+</ol>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/data_store_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+<p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step5/" class="btn btn-neutral float-right" title="WebDAV">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../step3/" class="btn btn-neutral" title="Associate Data with Metadata"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step3/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step5/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/data_store_guide/step5/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>WebDAV - Changing Your CyVerse Password</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "WebDAV";
+    var mkdocs_page_input_path = "step5.md";
+    var mkdocs_page_url = "/data_store_guide/step5/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Changing Your CyVerse Password</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">Drag-and-drop Data Transfer with Cyberduck</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Command Line Transfer with iCommands</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Associate Data with Metadata</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Data Sharing and Other Features</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">WebDAV</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#accessing-cyverse-data-via-webdav-services">Accessing CyVerse data via WebDAV Services</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-data">User Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#community-released-dataproject-data">Community Released Data/Project Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cyverse-curated-data-data-with-a-doi">CyVerse Curated Data (Data with a DOI)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#common-ways-to-access-the-webdav-service">Common Ways to Access the WebDAV Service</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Changing Your CyVerse Password</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>WebDAV</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/data_store_guide/edit/mkdocs/docs/step5.md"> Edit on CyVerse-learning-materials/data_store_guide</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="webdav">WebDAV<a class="headerlink" href="#webdav" title="Permanent link">&para;</a></h1>
+<p>WebDAV is an extension to the HTTP protocol that allows users to
+remotely edit and manage files. CyVerse has added support for WebDAV to
+the Data Store. This means users can access their home and public
+folders in the CyVerse Data Store from their local computers using web
+browsers and other WebDAV enabled applications such as common operating
+system file managers. With WebDAV, users can copy files between local
+computer and the Data Store as easily as if they were copying them
+between two folders on their computer.</p>
+<hr />
+<h2 id="limitations"><em>Limitations</em><a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h2>
+<p>WebDAV works best for small files or small collections of files. There
+is no hard size limit for files, but it is recommended to not work with
+files over 1 GiB in size. However, 10 GiB files have been downloaded
+from the CyVerse WebDAV service using a web browser with decent
+performance. The iCommands still out perform WebDAV. For better ways to
+download large files or large sets of files, please see the pages for
+<a href="./step2.html">iCommands</a> or <a href="./step1.html">CyberDuck</a>.</p>
+<hr />
+<h2 id="accessing-cyverse-data-via-webdav-services"><em>Accessing CyVerse data via WebDAV Services</em><a class="headerlink" href="#accessing-cyverse-data-via-webdav-services" title="Permanent link">&para;</a></h2>
+<p>There are two access points to CyVerse WebDAV services: one for
+anonymous read-only access and one for authenticated access. These
+services can be accessed directly in a web browser, or with command line
+tools.</p>
+<p>The simplest way to access WebDAV in a browser is to go to
+<a href="https://data.cyverse.org/dav">https://data.cyverse.org/dav</a>. This will bring up a menu for the
+options described below.</p>
+<p>WebDAV provides anonymous read-only access through URLs rooted at
+<code>https://data.cyverse.org/dav-anon/</code>. All data that can be seen by the
+anonymous user can be accessed anonymously through this service,
+excluding the immediate contents of <code>/iplant/home</code> and the immediate
+contents of <code>/iplant/home/&lt;username&gt;</code>, where \<username> is any CyVerse
+login name.</p>
+<p>The service also provided authenticated access through URLs rooted at
+<code>https://data.cyverse.org/dav/</code>. Once a user has authenticated with his
+CyVerse credentials, they can access any file or folder with the
+permission level they have on the file or folder.</p>
+<h2 id="user-data">User Data<a class="headerlink" href="#user-data" title="Permanent link">&para;</a></h2>
+<p>A user with a CyVerse login of \<username> would use the WebDAV link
+<code>https://data.cyverse.org/dav/iplant/home/&lt;username&gt;/</code> to access their
+data.</p>
+<h2 id="community-released-dataproject-data">Community Released Data/Project Data<a class="headerlink" href="#community-released-dataproject-data" title="Permanent link">&para;</a></h2>
+<p>To access data from specific projects stored in iRODS at
+<code>/iplant/home/shared/&lt;project&gt;/</code>, use the link
+<code>https://data.cyverse.org/dav/iplant/projects/&lt;project&gt;/</code>.</p>
+<h2 id="cyverse-curated-data-data-with-a-doi">CyVerse Curated Data (Data with a DOI)<a class="headerlink" href="#cyverse-curated-data-data-with-a-doi" title="Permanent link">&para;</a></h2>
+<p>To access the data curated by CyVerse in the Data Commons (that is,
+datasets with DOIs), use the following link:
+<a href="https://data.cyverse.org/dav-anon/iplant/commons/cyverse_curated/">https://data.cyverse.org/dav-anon/iplant/commons/cyverse_curated/</a> .</p>
+<h2 id="common-ways-to-access-the-webdav-service"><em>Common Ways to Access the WebDAV Service</em><a class="headerlink" href="#common-ways-to-access-the-webdav-service" title="Permanent link">&para;</a></h2>
+<p><em>Web Browser</em></p>
+<p>Since WebDAV is an extension of HTTP, any web browser can be used to
+browse and download data through the service, using the links provided
+above.</p>
+<p><em>File Manager</em></p>
+<p>Most common operating systems come with a file manager application that
+can interface with a WebDAV service and can mount a WebDAV folder into
+the file system being managed. This allows other application running on
+the same computer as the file manager to access data hosted by a WebDAV
+service as if it were local.</p>
+<p><em>Accessing through OS X Finder</em></p>
+<p>Use these instructions to connect to the WebDAV service with OS X
+Finder.</p>
+<blockquote>
+<ol>
+<li>Open Finder.</li>
+<li>From the menu bar, select Go, then Connect to Server (or type
+    command K).</li>
+<li>Enter the URL for the folder to access.</li>
+<li>Provide your CyVerse username and password if prompted.</li>
+</ol>
+</blockquote>
+<p><em>Accessing through Windows File Explorer</em></p>
+<p>Use these instructions to connect to the WebDAV service with Windows
+File Explorer.</p>
+<blockquote>
+<ol>
+<li>Open the File Explorer.</li>
+<li>Right-click on This PC.</li>
+<li>Select Map Network Drive.</li>
+<li>Select Choose a custom network location and click next.</li>
+<li>Enter the URL for the folder to access.</li>
+<li>Provide your CyVerse username and password if prompted.</li>
+</ol>
+</blockquote>
+<p><em>Accessing through Gnome Files</em></p>
+<p>Use these instruction to open the WebDAV service from the Gnome desktop
+using Files.</p>
+<blockquote>
+<ol>
+<li>Open Files.</li>
+<li>Select Other Locations in the Places sidebar.</li>
+<li>In the Connect to Server footer, enter the URL for the desired
+    folder to access. Note: Files identifies TLS encrypted WebDAV URLs
+    with the scheme davs. This means the base for the CyVerse URLs is
+    <code>davs://data.cyverse.org/</code> instead of <code>https://data.cyverse.org/</code>.
+    (e.g., <code>davs://data.cyverse.org/dav/iplant/home/&lt;username&gt;/</code>)</li>
+<li>Click the neighboring Connect button.</li>
+<li>Provide your CyVerse username and password if prompted.</li>
+</ol>
+</blockquote>
+<p><em>Accessing through Linux Terminal</em></p>
+<p>This requires root or at least sudo access. Use these instruction to
+mount a WebDAV folder into the file system from a Linux terminal.</p>
+<blockquote>
+<ol>
+<li>Ensure that davfs2 is installed, e.g., for Ubuntu, sudo apt
+    install davfs2.</li>
+<li>Create a directory where you to want to mount the data, e.g.,
+    mkdir /tmp/data.</li>
+<li>Mount the data as root, i.e., sudo mount -o gid=\<you>,uid=\<you>
+    -t davfs \<link> /tmp/data, where \<you> is your username on the
+    Linux machine and \<link> is the URL to the WebDAV folder you want
+    to mount.</li>
+<li>Provide your CyVerse username and password if prompted.</li>
+</ol>
+</blockquote>
+<h2 id="summary"><em>Summary</em><a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This guide has introduced the basic data management tools you need to
+manage the lifecycle of Data in CyVerse. There are many more features to
+explore and these are detailed in the full .</p>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/data_store_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+<p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../step4/" class="btn btn-neutral" title="Data Sharing and Other Features"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step4/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

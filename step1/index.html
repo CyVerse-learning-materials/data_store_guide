@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/data_store_guide/step1/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Drag-and-drop Data Transfer with Cyberduck - Changing Your CyVerse Password</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Drag-and-drop Data Transfer with Cyberduck";
+    var mkdocs_page_input_path = "step1.md";
+    var mkdocs_page_url = "/data_store_guide/step1/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Changing Your CyVerse Password</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Drag-and-drop Data Transfer with Cyberduck</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#download-and-first-time-configuration-of-cyberduck">Download and first-time configuration of Cyberduck</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#upload-from-local-computer-to-data-store-using-cyberduck">Upload from local computer to Data Store using Cyberduck</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#download-from-data-store-to-local-computer-using-cyberduck">Download from Data Store to local computer using Cyberduck</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Command Line Transfer with iCommands</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Associate Data with Metadata</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Data Sharing and Other Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">WebDAV</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Changing Your CyVerse Password</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Drag-and-drop Data Transfer with Cyberduck</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/data_store_guide/edit/mkdocs/docs/step1.md"> Edit on CyVerse-learning-materials/data_store_guide</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="drag-and-drop-data-transfer-with-cyberduck">Drag-and-drop Data Transfer with Cyberduck<a class="headerlink" href="#drag-and-drop-data-transfer-with-cyberduck" title="Permanent link">&para;</a></h1>
+<p>Cyberduck is a 3<sup>rd</sup> party software (available as freeware) tool that
+allows you to drag-and-drop files between your local computer and the
+Data Store. Cyberduck can also be used to rename files, and browse other
+shared or public Data Store locations.</p>
+<hr />
+<h2 id="download-and-first-time-configuration-of-cyberduck">Download and first-time configuration of Cyberduck<a class="headerlink" href="#download-and-first-time-configuration-of-cyberduck" title="Permanent link">&para;</a></h2>
+<blockquote>
+<ol>
+<li>
+<p>Download Cyberduck at the <a href="https://cyberduck.io/download/">Cyberduck Website</a>; follow the installation instructions
+    for your operating system.</p>
+</li>
+<li>
+<p>Download the <a href="https://cyverse.atlassian.net/wiki/download/attachments/241869843/CyVerseDataStore.cyberduckprofile?version=1&amp;modificationDate=1568640173000&amp;cacheVersion=1&amp;api=v2">CyVerse connection profile</a> Double-click on the downloaded file - this
+    should open the installed Cyberduck software.</p>
+</li>
+<li>
+<p>In the Cyberduck configuration window, enter your <strong>CyVerse
+    username</strong> in the field 'iPlant username'.</p>
+</li>
+<li>
+<p>Under 'Advanced Options' ensure 'Transfer Files' option is set
+    to <strong>'Open Multiple Connections'</strong>. Close this window - your
+    entries will be automatically saved.
+    <img alt="cyberduck_config" src="../assets/data_store/cyberduck_config.png" /></p>
+</li>
+<li>
+<p>Double-click on the Data Store bookmark in the Cyberduck window.
+    Enter your CyVerse credentials.
+    <img alt="cyberduck_bookmark" src="../assets/data_store/cyberduck_bookmark.png" /></p>
+</li>
+</ol>
+</blockquote>
+<p>You should now be connected to the CyVerse Data Store and viewing the
+contents of your home directory.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>At the top of your Cyberduck window you can see your location within the
+Data Store. From Cyberduck's 'Go' menu, you can select 'Go to
+folder' to navigate to any other Data Store location that is public or
+shared with you.
+<img alt="cyberduck_window" src="../assets/data_store/cyberduck_window.png" /></p>
+</div>
+<hr />
+<h2 id="upload-from-local-computer-to-data-store-using-cyberduck">Upload from local computer to Data Store using Cyberduck<a class="headerlink" href="#upload-from-local-computer-to-data-store-using-cyberduck" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>When uploading your data to the Data Store you should not upload
+   files/ folders with names containing spaces (e.g. experiment
+   one.fastq) or name that contain special characters (e.g. ~ ` ! @ #
+   $ % ^ &amp; * ( ) + = { } [ ] | : ; \" \' \&lt; > , ? /). The Apps on
+   the Discovery Environment and most command line applications will
+   typically not tolerate these characters. For long file/folder names
+   the use of underscores (e.g. experiment_one.fastq) is the recommended
+   practice.</p>
+<blockquote>
+<ol>
+<li>
+<p>Double-click on the Data Store bookmark to connect to the Data
+    Store</p>
+</li>
+<li>
+<p>Select file(s)/folder(s) from your local machine and drag them
+    into the Cyberduck window. (You may drag directly into an existing
+    folder or from the Cyberduck 'File' menu, create a new folder).</p>
+</li>
+<li>
+<p>A 'Transfers' window will appear. Monitor the upload to
+    completion.
+    <img alt="cyberduck_transfers" src="../assets/data_store/cyberduck_transfers.png" /></p>
+</li>
+</ol>
+</blockquote>
+<hr />
+<h2 id="download-from-data-store-to-local-computer-using-cyberduck">Download from Data Store to local computer using Cyberduck<a class="headerlink" href="#download-from-data-store-to-local-computer-using-cyberduck" title="Permanent link">&para;</a></h2>
+<blockquote>
+<ol>
+<li>Double-click on the Data Store Bookmark to connect to the Data
+    Store</li>
+<li>Select file(s)/folder(s) in the Data Store (Cyberduck window) and
+    drag them to a location on your local computer.</li>
+<li>A 'Transfers' window will appear. Monitor the download to
+    completion.</li>
+</ol>
+</blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In the Cyberduck 'File' menu, there are several more functionalities.
+You can for example directly specify files and folders to move without
+dragging and dropping them. You can also 'synchronize' folders - only
+copying items that are missing in a folder rather than copying all
+contents.</p>
+</div>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/data_store_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+<blockquote>
+<p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step2/" class="btn btn-neutral float-right" title="Command Line Transfer with iCommands">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
