@@ -44,16 +44,16 @@ contents of your home directory.
 
 ## Upload from local computer to Data Store using Cyberduck
 
-> !!! Warning
->
->   When uploading your data to the Data Store you should not upload
->   files/ folders with names containing spaces (e.g. experiment
->   one.fastq) or name that contain special characters (e.g. \~ \` ! @ \#
->   \$ % \^ & \* ( ) + = { } \[ \] \| : ; \" \' \< \> , ? /). The Apps on
->   the Discovery Environment and most command line applications will
->   typically not tolerate these characters. For long file/folder names
->   the use of underscores (e.g. experiment_one.fastq) is the recommended
->   practice.
+!!! Warning
+
+   When uploading your data to the Data Store you should not upload
+   files/ folders with names containing spaces (e.g. experiment
+   one.fastq) or name that contain special characters (e.g. \~ \` ! @ \#
+   \$ % \^ & \* ( ) + = { } \[ \] \| : ; \" \' \< \> , ? /). The Apps on
+   the Discovery Environment and most command line applications will
+   typically not tolerate these characters. For long file/folder names
+   the use of underscores (e.g. experiment_one.fastq) is the recommended
+   practice.
 > 
 >
 > 1.  Double-click on the Data Store bookmark to connect to the Data
