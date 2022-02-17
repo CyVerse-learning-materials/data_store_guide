@@ -107,10 +107,10 @@ write, or own files/folders
 
 **Fix or improve this documentation**
 
--   Search for an answer:
+-   Search for an answer: [CyVerse Learning Center](https://cyverse-learning-materials.github.io/learning-materials-home)
 -   Ask us for help: click on the lower right-hand side of the page
--   Report an issue or submit a change:
--   Send feedback: [learning\@CyVerse.org](learning@CyVerse.org)
+-   Report an issue or submit a change: [Github Repo](https://github.com/CyVerse-learning-materials/data_store_guide)
+-   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
 
